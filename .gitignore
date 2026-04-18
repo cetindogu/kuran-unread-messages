@@ -1,0 +1,13 @@
+# .NET Gitignore
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+kuran.db
+*.json
+!appsettings.json
+!appsettings.Development.json
+Data/QuranData/*.json
