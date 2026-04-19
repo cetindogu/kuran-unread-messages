@@ -59,14 +59,24 @@ namespace KuranApp.Services
         {
             var json = await File.ReadAllTextAsync(filePath);
             var doc = JsonDocument.Parse(json);
+            
+            // Log available properties for debugging
+            Console.WriteLine($"Processing Surah {surahNumber} from {filePath}");
+            foreach (var prop in doc.RootElement.EnumerateObject())
+            {
+                Console.WriteLine($"Found property: {prop.Name}");
+            }
+
             var verses = doc.RootElement.GetProperty("Verses");
 
             foreach (var ayah in verses.EnumerateArray())
             {
-                int ayahNumber = ayah.GetProperty("Number").GetInt32();
-                int revelationOrder = ayah.GetProperty("RevelationOrder").GetInt32();
-                string arabicText = ayah.GetProperty("ArabicText").GetString() ?? "";
-                string turkishTranslation = ayah.GetProperty("TurkishTranslation").GetString() ?? "";
+                Console.WriteLine($"Ayah Raw: {ayah.GetRawText()}");
+                int ayahNumber = ayah.TryGetProperty("Number", out var numProp) ? numProp.GetInt32() : 0;
+                int revelationOrder = ayah.TryGetProperty("RevelationOrder", out var revProp) ? revProp.GetInt32() : 0;
+                Console.WriteLine($"Parsed RevOrder: {revelationOrder}");
+                string arabicText = ayah.TryGetProperty("ArabicText", out var arProp) ? arProp.GetString() ?? "" : "";
+                string turkishTranslation = ayah.TryGetProperty("TurkishTranslation", out var trProp) ? trProp.GetString() ?? "" : "";
 
                 string summary = await _aiService.GenerateSummaryAsync(arabicText, turkishTranslation, "GPT-4o");
 
