@@ -46,10 +46,22 @@ namespace KuranApp.Services
                 var arabicSurahs = arabicResponse.Data.Surahs.ToDictionary(s => s.Number);
                 var turkishSurahs = turkishResponse.Data.Surahs.ToDictionary(s => s.Number);
 
+                int currentRevelationOrder = 1;
                 foreach (int surahNumber in RevelationOrderOfSurahs)
                 {
+                    string fileName = Path.Combine(_dataDirectory, $"surah_{surahNumber}.json");
+                    
                     var surahArabic = arabicSurahs[surahNumber];
                     var surahTurkish = turkishSurahs[surahNumber];
+
+                    // Dosya varsa sadece indexleri güncelle ve atla
+                    if (File.Exists(fileName))
+                    {
+                        Console.WriteLine($"Sure {surahNumber} ({surahArabic.EnglishName}) zaten mevcut, atlanıyor.");
+                        globalRevelationIndex += surahArabic.Ayahs.Count;
+                        currentRevelationOrder++;
+                        continue;
+                    }
 
                     var verses = new List<object>();
                     for (int i = 0; i < surahArabic.Ayahs.Count; i++)
@@ -68,11 +80,11 @@ namespace KuranApp.Services
                         SurahNumber = surahNumber,
                         SurahName = surahArabic.Name,
                         SurahEnglishName = surahArabic.EnglishName,
-                        RevelationOrder = Array.IndexOf(RevelationOrderOfSurahs, surahNumber) + 1,
+                        SurahMeaning = surahArabic.EnglishNameTranslation,
+                        RevelationOrder = currentRevelationOrder++,
                         Verses = verses
                     };
 
-                    string fileName = Path.Combine(_dataDirectory, $"surah_{surahNumber}.json");
                     await File.WriteAllTextAsync(fileName, JsonSerializer.Serialize(surahData, new JsonSerializerOptions { WriteIndented = true }));
                     Console.WriteLine($"Sure {surahNumber} ({surahArabic.EnglishName}) indirildi.");
                 }
@@ -101,6 +113,7 @@ namespace KuranApp.Services
         public int Number { get; set; }
         public string Name { get; set; } = string.Empty;
         public string EnglishName { get; set; } = string.Empty;
+        public string EnglishNameTranslation { get; set; } = string.Empty;
         public List<AyahResponse> Ayahs { get; set; } = new();
     }
 

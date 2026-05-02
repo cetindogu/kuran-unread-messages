@@ -30,13 +30,11 @@ namespace KuranApp.Services
                 throw new DirectoryNotFoundException($"Veri dizini bulunamadı: {_dataDirectory}. Lütfen önce sync işlemini çalıştırın.");
             }
 
-            string? lastProcessedSurahStr = _db.GetSyncState("LastProcessedSurah");
-            int lastProcessedSurah = string.IsNullOrEmpty(lastProcessedSurahStr) ? -1 : int.Parse(lastProcessedSurahStr);
+            // Önce mevcut tüm veriyi temizleyelim ki nüzul sırası karışmasın
+            _db.ClearAllData();
 
             foreach (int surahNumber in RevelationOrderOfSurahs)
             {
-                if (IsSurahAlreadyProcessed(surahNumber, lastProcessedSurah)) continue;
-
                 string filePath = Path.Combine(_dataDirectory, $"surah_{surahNumber}.json");
                 if (!File.Exists(filePath)) continue;
 
@@ -62,12 +60,26 @@ namespace KuranApp.Services
             
             // Log available properties for debugging
             Console.WriteLine($"Processing Surah {surahNumber} from {filePath}");
-            foreach (var prop in doc.RootElement.EnumerateObject())
-            {
-                Console.WriteLine($"Found property: {prop.Name}");
-            }
+            
+            string surahName = doc.RootElement.GetProperty("SurahName").GetString() ?? "";
+             string surahEnglishName = doc.RootElement.GetProperty("SurahEnglishName").GetString() ?? "";
+             string surahMeaning = doc.RootElement.TryGetProperty("SurahMeaning", out var meaningProp) ? meaningProp.GetString() ?? "" : "";
+             int surahRevelationOrder = doc.RootElement.GetProperty("RevelationOrder").GetInt32();
+             var verses = doc.RootElement.GetProperty("Verses");
+             int verseCount = verses.GetArrayLength();
 
-            var verses = doc.RootElement.GetProperty("Verses");
+             Console.WriteLine($"PERSIST: Surah {surahNumber}, Order {surahRevelationOrder}");
+ 
+             var surah = new Surah
+             {
+                 SurahNumber = surahNumber,
+                 Name = surahName,
+                 EnglishName = surahEnglishName,
+                 Meaning = surahMeaning,
+                 RevelationOrder = surahRevelationOrder,
+                 VerseCount = verseCount
+             };
+            _db.AddSurah(surah);
 
             foreach (var ayah in verses.EnumerateArray())
             {

@@ -11,6 +11,12 @@ namespace KuranApp.Data
             {
                 db.AddUser("default_user");
             }
+
+            // Test kullanıcısı ekle
+            if (db.GetUserId("test") == -1)
+            {
+                db.AddUser("test");
+            }
         }
     }
 }

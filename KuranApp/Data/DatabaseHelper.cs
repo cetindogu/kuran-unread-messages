@@ -20,6 +20,13 @@ namespace KuranApp.Data
             using var connection = new SqliteConnection(_connectionString);
             connection.Open();
 
+            // Disable foreign key constraints for all connections on this database
+            using (var cmd = connection.CreateCommand())
+            {
+                cmd.CommandText = "PRAGMA foreign_keys = OFF;";
+                cmd.ExecuteNonQuery();
+            }
+
             var command = connection.CreateCommand();
             command.CommandText = @"
                 CREATE TABLE IF NOT EXISTS Users (
@@ -34,7 +41,8 @@ namespace KuranApp.Data
                     ArabicText TEXT,
                     TurkishTranslation TEXT,
                     Summary TEXT,
-                    DownloadedAt DATETIME
+                    DownloadedAt DATETIME,
+                    UNIQUE(SurahId, VerseNumber)
                 );
                 CREATE TABLE IF NOT EXISTS UserReads (
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -64,6 +72,24 @@ namespace KuranApp.Data
                     Key TEXT PRIMARY KEY,
                     Value TEXT,
                     UpdatedAt DATETIME
+                );
+                CREATE TABLE IF NOT EXISTS Surahs (
+                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    SurahNumber INTEGER UNIQUE,
+                    Name TEXT,
+                    EnglishName TEXT,
+                    Meaning TEXT,
+                    RevelationOrder INTEGER,
+                    VerseCount INTEGER
+                );
+                CREATE TABLE IF NOT EXISTS UserSurahReads (
+                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    UserId INTEGER,
+                    SurahId INTEGER,
+                    ReadAt DATETIME,
+                    FOREIGN KEY(UserId) REFERENCES Users(Id),
+                    FOREIGN KEY(SurahId) REFERENCES Surahs(Id),
+                    UNIQUE(UserId, SurahId)
                 );";
             command.ExecuteNonQuery();
         }
@@ -185,7 +211,7 @@ namespace KuranApp.Data
 
             var command = connection.CreateCommand();
             command.CommandText = @"
-                INSERT INTO Verses (SurahId, VerseNumber, RevelationOrder, ArabicText, TurkishTranslation, Summary, DownloadedAt)
+                INSERT OR REPLACE INTO Verses (SurahId, VerseNumber, RevelationOrder, ArabicText, TurkishTranslation, Summary, DownloadedAt)
                 VALUES (@surahId, @verseNumber, @revelationOrder, @arabicText, @turkishTranslation, @summary, @downloadedAt);
                 SELECT last_insert_rowid();";
             
@@ -198,6 +224,84 @@ namespace KuranApp.Data
             command.Parameters.AddWithValue("@downloadedAt", verse.DownloadedAt);
             
             verse.Id = Convert.ToInt32(command.ExecuteScalar());
+        }
+
+        public void AddSurah(Surah surah)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = @"
+                INSERT OR REPLACE INTO Surahs (SurahNumber, Name, EnglishName, Meaning, RevelationOrder, VerseCount)
+                VALUES (@surahNumber, @name, @englishName, @meaning, @revelationOrder, @verseCount);
+                SELECT last_insert_rowid();";
+            
+            command.Parameters.AddWithValue("@surahNumber", surah.SurahNumber);
+            command.Parameters.AddWithValue("@name", surah.Name);
+            command.Parameters.AddWithValue("@englishName", surah.EnglishName);
+            command.Parameters.AddWithValue("@meaning", surah.Meaning);
+            command.Parameters.AddWithValue("@revelationOrder", surah.RevelationOrder);
+            command.Parameters.AddWithValue("@verseCount", surah.VerseCount);
+            
+            surah.Id = Convert.ToInt32(command.ExecuteScalar());
+            Console.WriteLine($"DB: Added Surah {surah.SurahNumber} with RevelationOrder {surah.RevelationOrder}");
+        }
+
+        public List<Surah> GetAllSurahs(int userId = 1)
+        {
+            var surahs = new List<Surah>();
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = @"
+                SELECT s.*, 
+                (SELECT COUNT(*) FROM UserSurahReads WHERE UserId = @userId AND SurahId = s.Id) as IsRead
+                FROM Surahs s 
+                ORDER BY s.RevelationOrder";
+            command.Parameters.AddWithValue("@userId", userId);
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                surahs.Add(new Surah
+                {
+                    Id = reader.GetInt32(0),
+                    SurahNumber = reader.GetInt32(1),
+                    Name = reader.GetString(2),
+                    EnglishName = reader.GetString(3),
+                    Meaning = reader.IsDBNull(4) ? "" : reader.GetString(4),
+                    RevelationOrder = reader.GetInt32(5),
+                    VerseCount = reader.GetInt32(6)
+                });
+            }
+            return surahs;
+        }
+
+        public void MarkSurahAsRead(int userId, int surahId)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = "INSERT OR IGNORE INTO UserSurahReads (UserId, SurahId, ReadAt) VALUES (@userId, @surahId, @readAt)";
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@surahId", surahId);
+            command.Parameters.AddWithValue("@readAt", DateTime.Now);
+            command.ExecuteNonQuery();
+        }
+
+        public bool IsSurahRead(int userId, int surahId)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = "SELECT COUNT(*) FROM UserSurahReads WHERE UserId = @userId AND SurahId = @surahId";
+            command.Parameters.AddWithValue("@userId", userId);
+            command.Parameters.AddWithValue("@surahId", surahId);
+            return Convert.ToInt32(command.ExecuteScalar()) > 0;
         }
 
         public void AddAIInterpretation(AIInterpretation interpretation)
@@ -300,10 +404,85 @@ namespace KuranApp.Data
         {
             using var connection = new SqliteConnection(_connectionString);
             connection.Open();
+            
+            using var transaction = connection.BeginTransaction();
+            try
+            {
+                using var cmd = connection.CreateCommand();
+                cmd.Transaction = transaction;
+                
+                // Foreign keys geçici olarak kapatılır
+                cmd.CommandText = "PRAGMA foreign_keys = OFF;";
+                cmd.ExecuteNonQuery();
+
+                string[] tables = { 
+                    "UserSurahReads", 
+                    "UserReads", 
+                    "AIInterpretations", 
+                    "VerseLinks", 
+                    "Verses", 
+                    "Surahs", 
+                    "SyncState" 
+                };
+
+                foreach (var table in tables)
+                {
+                    cmd.CommandText = $"DELETE FROM {table};";
+                    cmd.ExecuteNonQuery();
+                    
+                    // Auto-increment counter'larını da sıfırlayalım
+                    cmd.CommandText = $"DELETE FROM sqlite_sequence WHERE name='{table}';";
+                    try { cmd.ExecuteNonQuery(); } catch { }
+                }
+
+                // Foreign keys tekrar açılır
+                cmd.CommandText = "PRAGMA foreign_keys = ON;";
+                cmd.ExecuteNonQuery();
+
+                transaction.Commit();
+            }
+            catch (Exception)
+            {
+                transaction.Rollback();
+                throw;
+            }
+        }
+        
+        public void ClearTable(string tableName)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+            using var cmd = connection.CreateCommand();
+            cmd.CommandText = $"DELETE FROM {tableName};";
+            cmd.ExecuteNonQuery();
+        }
+        
+        public List<Verse> GetVersesBySurah(int surahNumber)
+        {
+            var verses = new List<Verse>();
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
 
             var command = connection.CreateCommand();
-            command.CommandText = "DELETE FROM UserReads; DELETE FROM VerseLinks; DELETE FROM Verses; DELETE FROM Users;";
-            command.ExecuteNonQuery();
+            command.CommandText = "SELECT * FROM Verses WHERE SurahId = @surahId ORDER BY VerseNumber";
+            command.Parameters.AddWithValue("@surahId", surahNumber);
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                verses.Add(new Verse
+                {
+                    Id = reader.GetInt32(0),
+                    SurahId = reader.GetInt32(1),
+                    VerseNumber = reader.GetInt32(2),
+                    RevelationOrder = reader.GetInt32(3),
+                    ArabicText = reader.GetString(4),
+                    TurkishTranslation = reader.GetString(5),
+                    Summary = reader.GetString(6),
+                    DownloadedAt = reader.GetDateTime(7)
+                });
+            }
+            return verses;
         }
     }
 }

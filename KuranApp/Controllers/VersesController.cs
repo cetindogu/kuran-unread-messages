@@ -24,6 +24,9 @@ namespace KuranApp.Controllers
         [HttpPost("sync")]
         public async Task<IActionResult> Sync()
         {
+            // Veritabanını temizleyelim
+            _db.ClearAllData();
+
             var downloader = new QuranDataDownloader();
             await downloader.DownloadAllQuranDataAsync();
             

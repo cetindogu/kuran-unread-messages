@@ -5,9 +5,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<DatabaseHelper>();
-builder.Services.AddScoped<IAIService, AIService>();
-builder.Services.AddScoped<QuranPersistenceService>();
+builder.Services.AddSingleton<IAIService, AIService>();
+builder.Services.AddSingleton<QuranPersistenceService>();
 builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.WithOrigins("http://localhost:8080")
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 // Add OpenAPI/Swagger support
 builder.Services.AddEndpointsApiExplorer();
@@ -29,7 +39,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseRouting();
+app.UseCors("AllowAll");
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();
