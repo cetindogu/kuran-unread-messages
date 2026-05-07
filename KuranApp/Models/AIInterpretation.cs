@@ -9,5 +9,6 @@ namespace KuranApp.Models
         public string ModelName { get; set; } = string.Empty;
         public string Interpretation { get; set; } = string.Empty;
         public DateTime GeneratedAt { get; set; }
+        public int CostTokens { get; set; }
     }
 }

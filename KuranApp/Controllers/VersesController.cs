@@ -3,6 +3,8 @@ using KuranApp.Data;
 using KuranApp.Models;
 using KuranApp.Services;
 using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
 
 namespace KuranApp.Controllers
 {
@@ -11,27 +13,21 @@ namespace KuranApp.Controllers
     public class VersesController : ControllerBase
     {
         private readonly DatabaseHelper _db;
-        private readonly IAIService _aiService;
         private readonly QuranPersistenceService _persistenceService;
 
-        public VersesController(DatabaseHelper db, IAIService aiService, QuranPersistenceService persistenceService)
+        public VersesController(DatabaseHelper db, QuranPersistenceService persistenceService)
         {
             _db = db;
-            _aiService = aiService;
             _persistenceService = persistenceService;
         }
 
         [HttpPost("sync")]
         public async Task<IActionResult> Sync()
         {
-            // Veritabanını temizleyelim
             _db.ClearAllData();
-
             var downloader = new QuranDataDownloader();
             await downloader.DownloadAllQuranDataAsync();
-            
             await _persistenceService.PersistAllInRevelationOrderAsync();
-            
             return Ok("Sync and Persistence completed.");
         }
 
@@ -39,6 +35,48 @@ namespace KuranApp.Controllers
         public IEnumerable<AIInterpretation> GetInterpretations(int id)
         {
             return _db.GetAIInterpretations(id);
+        }
+
+        [HttpGet("{id}/interpretations/{modelId}")]
+        public ActionResult<AIInterpretation> GetInterpretation(int id, int modelId)
+        {
+            var interpretation = _db.GetAIInterpretation(id, modelId);
+            if (interpretation == null)
+                return NotFound();
+            return interpretation;
+        }
+
+        [HttpPost("{id}/interpretations/{modelId}/generate")]
+        public async Task<ActionResult<AIInterpretation>> GenerateInterpretation(int id, int modelId)
+        {
+            var verse = _db.GetVerseById(id);
+            if (verse == null)
+                return NotFound("Verse not found.");
+
+            var modelInfo = _db.GetLLMModel(modelId);
+            if (modelInfo == null)
+                return NotFound("Model not found.");
+
+            var existing = _db.GetAIInterpretation(id, modelId);
+            if (existing != null)
+                return existing;
+
+            var result = await _persistenceService.GenerateInterpretationAsync(verse, modelInfo);
+            if (result == null)
+                return BadRequest("Yorum üretilemedi (API hatası veya model yüklü değil).");
+
+            var interpretation = new AIInterpretation
+            {
+                VerseId = id,
+                ModelName = modelInfo.DisplayName,
+                Interpretation = result,
+                GeneratedAt = DateTime.Now
+            };
+
+            _db.AddAIInterpretation(id, modelId, result);
+            _persistenceService.SaveInterpretationToFile(verse.SurahId, modelId, result);
+
+            return interpretation;
         }
 
         [HttpGet]
@@ -56,7 +94,6 @@ namespace KuranApp.Controllers
                     v.RevelationOrder,
                     v.ArabicText,
                     v.TurkishTranslation,
-                    v.Summary,
                     v.DownloadedAt,
                     IsRead = _db.IsVerseRead(userId, v.Id)
                 });
@@ -69,7 +106,7 @@ namespace KuranApp.Controllers
         {
             var v = _db.GetVerseById(id);
             if (v == null) return NotFound();
-            
+
             return new
             {
                 v.Id,
@@ -78,7 +115,6 @@ namespace KuranApp.Controllers
                 v.RevelationOrder,
                 v.ArabicText,
                 v.TurkishTranslation,
-                v.Summary,
                 v.DownloadedAt,
                 IsRead = _db.IsVerseRead(userId, v.Id)
             };

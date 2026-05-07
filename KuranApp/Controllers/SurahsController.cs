@@ -46,9 +46,16 @@ namespace KuranApp.Controllers
         }
 
         [HttpGet("{surahNumber}/verses")]
-        public IEnumerable<Verse> GetVerses(int surahNumber)
+        public ActionResult<IEnumerable<Verse>> GetVerses(int surahNumber)
         {
-            return _db.GetVersesBySurah(surahNumber);
+            try
+            {
+                return Ok(_db.GetVersesBySurah(surahNumber));
+            }
+            catch (System.Exception ex)
+            {
+                return StatusCode(500, ex.Message + " " + ex.StackTrace);
+            }
         }
 
         [HttpPost("reset")]
