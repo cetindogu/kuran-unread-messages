@@ -1,0 +1,122 @@
+{
+  "SurahEnglishName": "Al-Infitaar",
+  "SurahNumber": 82,
+  "RevelationOrder": 82,
+  "Verses": [
+    {
+      "RevelationOrder": 4405,
+      "TurkishTranslation": "Gök yarıldığı zaman,",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 4406,
+      "TurkishTranslation": "Yıldızlar dağılıp döküldüğü zaman,",
+      "ArabicText": "وَإِذَا ٱلْكَوَاكِبُ ٱنتَثَرَتْ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 4407,
+      "TurkishTranslation": "Denizler kaynaştığı zaman,",
+      "ArabicText": "وَإِذَا ٱلْبِحَارُ فُجِّرَتْ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 4408,
+      "TurkishTranslation": "Kabirlerin içi dışa çıktığı zaman,",
+      "ArabicText": "وَإِذَا ٱلْقُبُورُ بُعْثِرَتْ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 4409,
+      "TurkishTranslation": "İnsanoğlu, ne yaptığını ve ne yapmadığını görür.",
+      "ArabicText": "عَلِمَتْ نَفْسٌۭ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 4410,
+      "TurkishTranslation": "Ey insanoğlu! Seni yaratıp sonra şekil veren, düzenleyen, mütenasip kılan, istediği şekilde seni terkip eden, çok cömert olan Rabbine karşı seni aldatan nedir?",
+      "ArabicText": "يَٰٓأَيُّهَا ٱلْإِنسَٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 4411,
+      "TurkishTranslation": "Ey insanoğlu! Seni yaratıp sonra şekil veren, düzenleyen, mütenasip kılan, istediği şekilde seni terkip eden, çok cömert olan Rabbine karşı seni aldatan nedir?",
+      "ArabicText": "ٱلَّذِى خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
+      "Number": 7
+    },
+    {
+      "RevelationOrder": 4412,
+      "TurkishTranslation": "Ey insanoğlu! Seni yaratıp sonra şekil veren, düzenleyen, mütenasip kılan, istediği şekilde seni terkip eden, çok cömert olan Rabbine karşı seni aldatan nedir?",
+      "ArabicText": "فِىٓ أَىِّ صُورَةٍۢ مَّا شَآءَ رَكَّبَكَ",
+      "Number": 8
+    },
+    {
+      "RevelationOrder": 4413,
+      "TurkishTranslation": "Hayır, hayır; doğrusu siz dini yalanlıyorsunuz.",
+      "ArabicText": "كَلَّا بَلْ تُكَذِّبُونَ بِٱلدِّينِ",
+      "Number": 9
+    },
+    {
+      "RevelationOrder": 4414,
+      "TurkishTranslation": "Oysa, yaptıklarınızı bilen değerli yazıcılar sizi gözetlemektedirler.",
+      "ArabicText": "وَإِنَّ عَلَيْكُمْ لَحَٰفِظِينَ",
+      "Number": 10
+    },
+    {
+      "RevelationOrder": 4415,
+      "TurkishTranslation": "Oysa, yaptıklarınızı bilen değerli yazıcılar sizi gözetlemektedirler.",
+      "ArabicText": "كِرَامًۭا كَٰتِبِينَ",
+      "Number": 11
+    },
+    {
+      "RevelationOrder": 4416,
+      "TurkishTranslation": "Oysa, yaptıklarınızı bilen değerli yazıcılar sizi gözetlemektedirler.",
+      "ArabicText": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+      "Number": 12
+    },
+    {
+      "RevelationOrder": 4417,
+      "TurkishTranslation": "İyiler şüphesiz nimet içindedirler.",
+      "ArabicText": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍۢ",
+      "Number": 13
+    },
+    {
+      "RevelationOrder": 4418,
+      "TurkishTranslation": "Allah'ın buyruğundan çıkanlar cehennemdedirler.",
+      "ArabicText": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍۢ",
+      "Number": 14
+    },
+    {
+      "RevelationOrder": 4419,
+      "TurkishTranslation": "Din Günü oraya girerler.",
+      "ArabicText": "يَصْلَوْنَهَا يَوْمَ ٱلدِّينِ",
+      "Number": 15
+    },
+    {
+      "RevelationOrder": 4420,
+      "TurkishTranslation": "Oradan bir daha ayrılamazlar.",
+      "ArabicText": "وَمَا هُمْ عَنْهَا بِغَآئِبِينَ",
+      "Number": 16
+    },
+    {
+      "RevelationOrder": 4421,
+      "TurkishTranslation": "Din gününün ne olduğunu sen nereden bilirsin?",
+      "ArabicText": "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+      "Number": 17
+    },
+    {
+      "RevelationOrder": 4422,
+      "TurkishTranslation": "Evet, din gününün ne olduğunu nereden bileceksin?",
+      "ArabicText": "ثُمَّ مَآ أَدْرَىٰكَ مَا يَوْمُ ٱلدِّينِ",
+      "Number": 18
+    },
+    {
+      "RevelationOrder": 4423,
+      "TurkishTranslation": "O gün, kimsenin kimseye hiçbir fayda sağlamayacağı bir gündür. O gün buyruk, yalnız Allah'ındır.",
+      "ArabicText": "يَوْمَ لَا تَمْلِكُ نَفْسٌۭ لِّنَفْسٍۢ شَيْـًۭٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍۢ لِّلَّهِ",
+      "Number": 19
+    }
+  ],
+  "SurahName": "سُورَةُ الانفِطَارِ"
+}

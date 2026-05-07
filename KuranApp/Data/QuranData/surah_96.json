@@ -1,0 +1,122 @@
+{
+  "SurahEnglishName": "Al-Alaq",
+  "SurahNumber": 96,
+  "RevelationOrder": 1,
+  "Verses": [
+    {
+      "RevelationOrder": 1,
+      "TurkishTranslation": "Yaratan Rabbinin adıyla oku!",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 2,
+      "TurkishTranslation": "O, insanı pıhtılaşmış kandan (alak'tan) yarattı.",
+      "ArabicText": "خَلَقَ ٱلْإِنسَٰنَ مِنْ عَلَقٍ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 3,
+      "TurkishTranslation": "Oku! Kalemle öğreten, insana bilmediğini bildiren Rabbin, en büyük kerem sahibidir.",
+      "ArabicText": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 4,
+      "TurkishTranslation": "Oku! Kalemle öğreten, insana bilmediğini bildiren Rabbin, en büyük kerem sahibidir.",
+      "ArabicText": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 5,
+      "TurkishTranslation": "Oku! Kalemle öğreten, insana bilmediğini bildiren Rabbin, en büyük kerem sahibidir.",
+      "ArabicText": "عَلَّمَ ٱلْإِنسَٰنَ مَا لَمْ يَعْلَمْ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 6,
+      "TurkishTranslation": "Ama, insanoğlu kendini müstağni sayarak azgınlık eder.",
+      "ArabicText": "كَلَّآ إِنَّ ٱلْإِنسَٰنَ لَيَطْغَىٰٓ",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 7,
+      "TurkishTranslation": "Ama, insanoğlu kendini müstağni sayarak azgınlık eder.",
+      "ArabicText": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
+      "Number": 7
+    },
+    {
+      "RevelationOrder": 8,
+      "TurkishTranslation": "Dönüş şüphesiz Rabbinedir.",
+      "ArabicText": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
+      "Number": 8
+    },
+    {
+      "RevelationOrder": 9,
+      "TurkishTranslation": "Sen, namaz kılan kulu bundan menedeni gördün mü?",
+      "ArabicText": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
+      "Number": 9
+    },
+    {
+      "RevelationOrder": 10,
+      "TurkishTranslation": "Sen, namaz kılan kulu bundan menedeni gördün mü?",
+      "ArabicText": "عَبْدًا إِذَا صَلَّىٰٓ",
+      "Number": 10
+    },
+    {
+      "RevelationOrder": 11,
+      "TurkishTranslation": "Söyle bakalım, o kul doğru yolda giden veya Allah'a karşı gelmekten sakınmayı buyuran bir kimse olsun; veya söyle, yalanlayıp yüz çeviren birisi olsun",
+      "ArabicText": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
+      "Number": 11
+    },
+    {
+      "RevelationOrder": 12,
+      "TurkishTranslation": "Söyle bakalım, o kul doğru yolda giden veya Allah'a karşı gelmekten sakınmayı buyuran bir kimse olsun; veya söyle, yalanlayıp yüz çeviren birisi olsun",
+      "ArabicText": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
+      "Number": 12
+    },
+    {
+      "RevelationOrder": 13,
+      "TurkishTranslation": "Söyle bakalım, o kul doğru yolda giden veya Allah'a karşı gelmekten sakınmayı buyuran bir kimse olsun; veya söyle, yalanlayıp yüz çeviren birisi olsun",
+      "ArabicText": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
+      "Number": 13
+    },
+    {
+      "RevelationOrder": 14,
+      "TurkishTranslation": "Allah'ın her şeyi görmekte olduğunu bilmez mi?",
+      "ArabicText": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
+      "Number": 14
+    },
+    {
+      "RevelationOrder": 15,
+      "TurkishTranslation": "Ama bundan vazgeçmezse, and olsun ki, onu perçeminden,",
+      "ArabicText": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
+      "Number": 15
+    },
+    {
+      "RevelationOrder": 16,
+      "TurkishTranslation": "Yalancı ve günahkar perçeminden cehenneme sürükleriz.",
+      "ArabicText": "نَاصِيَةٍۢ كَٰذِبَةٍ خَاطِئَةٍۢ",
+      "Number": 16
+    },
+    {
+      "RevelationOrder": 17,
+      "TurkishTranslation": "O zaman, kafadarlarını çağırsın,",
+      "ArabicText": "فَلْيَدْعُ نَادِيَهُۥ",
+      "Number": 17
+    },
+    {
+      "RevelationOrder": 18,
+      "TurkishTranslation": "Biz de zebanileri çağıracağız.",
+      "ArabicText": "سَنَدْعُ ٱلزَّبَانِيَةَ",
+      "Number": 18
+    },
+    {
+      "RevelationOrder": 19,
+      "TurkishTranslation": "Sakın ona uyma; sen secde et, Rabbine yaklaş.",
+      "ArabicText": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
+      "Number": 19
+    }
+  ],
+  "SurahName": "سُورَةُ العَلَقِ"
+}

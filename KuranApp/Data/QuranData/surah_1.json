@@ -1,0 +1,50 @@
+{
+  "SurahEnglishName": "Al-Faatiha",
+  "SurahNumber": 1,
+  "RevelationOrder": 5,
+  "Verses": [
+    {
+      "RevelationOrder": 148,
+      "TurkishTranslation": "Rahman ve Rahim olan Allah'ın adıyla:",
+      "ArabicText": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 149,
+      "TurkishTranslation": "Hamd, Alemlerin Rabbi Allah'a mahsustur.",
+      "ArabicText": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 150,
+      "TurkishTranslation": "O Rahman ve Rahim'dir,",
+      "ArabicText": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 151,
+      "TurkishTranslation": "Din Gününün sahibidir.",
+      "ArabicText": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 152,
+      "TurkishTranslation": "Ancak Sana kulluk eder ve yalnız Senden yardım dileriz.",
+      "ArabicText": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 153,
+      "TurkishTranslation": "Bizi doğru yola eriştir.",
+      "ArabicText": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 154,
+      "TurkishTranslation": "Nimete erdirdiğin kimselerin yoluna; gazaba uğrayanların, ya da sapıtanların yoluna değil.",
+      "ArabicText": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "Number": 7
+    }
+  ],
+  "SurahName": "سُورَةُ ٱلْفَاتِحَةِ"
+}

@@ -1,0 +1,476 @@
+{
+  "SurahEnglishName": "Ar-Rahmaan",
+  "SurahNumber": 55,
+  "RevelationOrder": 97,
+  "Verses": [
+    {
+      "RevelationOrder": 5555,
+      "TurkishTranslation": "Rahman olan Allah Kuran'ı öğretti;",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 5556,
+      "TurkishTranslation": "Rahman olan Allah Kuran'ı öğretti;",
+      "ArabicText": "عَلَّمَ ٱلْقُرْءَانَ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 5557,
+      "TurkishTranslation": "İnsanı yarattı, ona konuşmayı öğretti.",
+      "ArabicText": "خَلَقَ ٱلْإِنسَٰنَ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 5558,
+      "TurkishTranslation": "İnsanı yarattı, ona konuşmayı öğretti.",
+      "ArabicText": "عَلَّمَهُ ٱلْبَيَانَ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 5559,
+      "TurkishTranslation": "Güneş ve ayın hareketleri bir hesaba göredir.",
+      "ArabicText": "ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍۢ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 5560,
+      "TurkishTranslation": "Bitkiler ve ağaçlar O'nun buyruğuna boyun eğerler.",
+      "ArabicText": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 5561,
+      "TurkishTranslation": "O, göğü yükseltmiştir; tartıyı koymuştur.",
+      "ArabicText": "وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ",
+      "Number": 7
+    },
+    {
+      "RevelationOrder": 5562,
+      "TurkishTranslation": "Artık tartıda tecavüz etmeyin.",
+      "ArabicText": "أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ",
+      "Number": 8
+    },
+    {
+      "RevelationOrder": 5563,
+      "TurkishTranslation": "Tartmayı doğru yapın, tartıyı eksik tutmayın.",
+      "ArabicText": "وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ",
+      "Number": 9
+    },
+    {
+      "RevelationOrder": 5564,
+      "TurkishTranslation": "Allah, yeri yaratıkları için meydana getirmiştir.",
+      "ArabicText": "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ",
+      "Number": 10
+    },
+    {
+      "RevelationOrder": 5565,
+      "TurkishTranslation": "Orada meyveler, salkımlı hurma ağaçları, kabuklu taneler, güzel kokulu otlar vardır.",
+      "ArabicText": "فِيهَا فَٰكِهَةٌۭ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ",
+      "Number": 11
+    },
+    {
+      "RevelationOrder": 5566,
+      "TurkishTranslation": "Orada meyveler, salkımlı hurma ağaçları, kabuklu taneler, güzel kokulu otlar vardır.",
+      "ArabicText": "وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱلرَّيْحَانُ",
+      "Number": 12
+    },
+    {
+      "RevelationOrder": 5567,
+      "TurkishTranslation": "Ey insanlar ve cinler! Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 13
+    },
+    {
+      "RevelationOrder": 5568,
+      "TurkishTranslation": "O, insanı pişmiş çamur gibi kuru balçıktan yaratmıştır.",
+      "ArabicText": "خَلَقَ ٱلْإِنسَٰنَ مِن صَلْصَٰلٍۢ كَٱلْفَخَّارِ",
+      "Number": 14
+    },
+    {
+      "RevelationOrder": 5569,
+      "TurkishTranslation": "Cinleri de yalın bir alevden yaratmıştır.",
+      "ArabicText": "وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍۢ مِّن نَّارٍۢ",
+      "Number": 15
+    },
+    {
+      "RevelationOrder": 5570,
+      "TurkishTranslation": "Öyleyken; Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 16
+    },
+    {
+      "RevelationOrder": 5571,
+      "TurkishTranslation": "O, iki doğunun Rabbidir, iki batının Rabbidir.",
+      "ArabicText": "رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ",
+      "Number": 17
+    },
+    {
+      "RevelationOrder": 5572,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 18
+    },
+    {
+      "RevelationOrder": 5573,
+      "TurkishTranslation": "Acı ve tatlı sulu iki denizi birbirine kavuşmamak üzere salıvermiştir.",
+      "ArabicText": "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
+      "Number": 19
+    },
+    {
+      "RevelationOrder": 5574,
+      "TurkishTranslation": "Aralarında bir engel vardır; birbirinin sınırını aşamazlar.",
+      "ArabicText": "بَيْنَهُمَا بَرْزَخٌۭ لَّا يَبْغِيَانِ",
+      "Number": 20
+    },
+    {
+      "RevelationOrder": 5575,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 21
+    },
+    {
+      "RevelationOrder": 5576,
+      "TurkishTranslation": "Bu iki denizden de inci ve mercan çıkar.",
+      "ArabicText": "يَخْرُجُ مِنْهُمَا ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ",
+      "Number": 22
+    },
+    {
+      "RevelationOrder": 5577,
+      "TurkishTranslation": "Öyleyken Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 23
+    },
+    {
+      "RevelationOrder": 5578,
+      "TurkishTranslation": "Denizde yürüyen dağlar gibi gemiler O'nundur.",
+      "ArabicText": "وَلَهُ ٱلْجَوَارِ ٱلْمُنشَـَٔاتُ فِى ٱلْبَحْرِ كَٱلْأَعْلَٰمِ",
+      "Number": 24
+    },
+    {
+      "RevelationOrder": 5579,
+      "TurkishTranslation": "Öyleyken Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 25
+    },
+    {
+      "RevelationOrder": 5580,
+      "TurkishTranslation": "Yeryüzünde bulunan her şey fanidir.",
+      "ArabicText": "كُلُّ مَنْ عَلَيْهَا فَانٍۢ",
+      "Number": 26
+    },
+    {
+      "RevelationOrder": 5581,
+      "TurkishTranslation": "Ancak, yüce ve cömert olan Rabbinin varlığı bakidir.",
+      "ArabicText": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "Number": 27
+    },
+    {
+      "RevelationOrder": 5582,
+      "TurkishTranslation": "Öyleyken Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 28
+    },
+    {
+      "RevelationOrder": 5583,
+      "TurkishTranslation": "Göklerde ve yerde olan kimseler her şeyi O'ndan isterler; O her an kainata tasarruf etmektedir.",
+      "ArabicText": "يَسْـَٔلُهُۥ مَن فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِى شَأْنٍۢ",
+      "Number": 29
+    },
+    {
+      "RevelationOrder": 5584,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 30
+    },
+    {
+      "RevelationOrder": 5585,
+      "TurkishTranslation": "Ey insan ve cin toplulukları! Sizin de hesabınızı ele alacağız.",
+      "ArabicText": "سَنَفْرُغُ لَكُمْ أَيُّهَ ٱلثَّقَلَانِ",
+      "Number": 31
+    },
+    {
+      "RevelationOrder": 5586,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 32
+    },
+    {
+      "RevelationOrder": 5587,
+      "TurkishTranslation": "Ey cin ve insan toplulukları! Göklerin ve yerin çevresini aşıp geçmeye gücünüz yetiyorsa geçin! Ama Allah'ın verdiği bir güç olmaksızın geçemezsiniz ki!",
+      "ArabicText": "يَٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَٰنٍۢ",
+      "Number": 33
+    },
+    {
+      "RevelationOrder": 5588,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 34
+    },
+    {
+      "RevelationOrder": 5589,
+      "TurkishTranslation": "Ey insanlar ve cinler! Üzerinize dumansız bir alev ve ateşsiz bir duman gönderilir de kurtulamazsınız.",
+      "ArabicText": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌۭ مِّن نَّارٍۢ وَنُحَاسٌۭ فَلَا تَنتَصِرَانِ",
+      "Number": 35
+    },
+    {
+      "RevelationOrder": 5590,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 36
+    },
+    {
+      "RevelationOrder": 5591,
+      "TurkishTranslation": "Gök yarılıp da, gül gibi kızardığı, yağ gibi eridiği zaman haliniz nice olur?",
+      "ArabicText": "فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةًۭ كَٱلدِّهَانِ",
+      "Number": 37
+    },
+    {
+      "RevelationOrder": 5592,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 38
+    },
+    {
+      "RevelationOrder": 5593,
+      "TurkishTranslation": "O gün ne insana ve ne cine suçu sorulur.",
+      "ArabicText": "فَيَوْمَئِذٍۢ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌۭ وَلَا جَآنٌّۭ",
+      "Number": 39
+    },
+    {
+      "RevelationOrder": 5594,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 40
+    },
+    {
+      "RevelationOrder": 5595,
+      "TurkishTranslation": "Suçlular simalarından tanınırlar da, alın saçlarından ve ayaklarından yakalanırlar.",
+      "ArabicText": "يُعْرَفُ ٱلْمُجْرِمُونَ بِسِيمَٰهُمْ فَيُؤْخَذُ بِٱلنَّوَٰصِى وَٱلْأَقْدَامِ",
+      "Number": 41
+    },
+    {
+      "RevelationOrder": 5596,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 42
+    },
+    {
+      "RevelationOrder": 5597,
+      "TurkishTranslation": "İşte suçluların yalanladıkları cehennem budur.",
+      "ArabicText": "هَٰذِهِۦ جَهَنَّمُ ٱلَّتِى يُكَذِّبُ بِهَا ٱلْمُجْرِمُونَ",
+      "Number": 43
+    },
+    {
+      "RevelationOrder": 5598,
+      "TurkishTranslation": "Onlar, cehennem ateşiyle kaynar su arasında dolaşır dururlar.",
+      "ArabicText": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍۢ",
+      "Number": 44
+    },
+    {
+      "RevelationOrder": 5599,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 45
+    },
+    {
+      "RevelationOrder": 5600,
+      "TurkishTranslation": "Rabbine karşı durmaktan korkan kimseye iki cennet vardır.",
+      "ArabicText": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ",
+      "Number": 46
+    },
+    {
+      "RevelationOrder": 5601,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 47
+    },
+    {
+      "RevelationOrder": 5602,
+      "TurkishTranslation": "Bu iki cennet türlü ağaçlarla doludur.",
+      "ArabicText": "ذَوَاتَآ أَفْنَانٍۢ",
+      "Number": 48
+    },
+    {
+      "RevelationOrder": 5603,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 49
+    },
+    {
+      "RevelationOrder": 5604,
+      "TurkishTranslation": "Bu cennetlerden akan iki kaynak vardır.",
+      "ArabicText": "فِيهِمَا عَيْنَانِ تَجْرِيَانِ",
+      "Number": 50
+    },
+    {
+      "RevelationOrder": 5605,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 51
+    },
+    {
+      "RevelationOrder": 5606,
+      "TurkishTranslation": "Bu cennetlerde türlü meyveden çift çift vardır.",
+      "ArabicText": "فِيهِمَا مِن كُلِّ فَٰكِهَةٍۢ زَوْجَانِ",
+      "Number": 52
+    },
+    {
+      "RevelationOrder": 5607,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 53
+    },
+    {
+      "RevelationOrder": 5608,
+      "TurkishTranslation": "Orada, örtüleri parlak atlastan yataklara yaslanırlar; iki cennetin meyvelerini de kolayca toplarlar.",
+      "ArabicText": "مُتَّكِـِٔينَ عَلَىٰ فُرُشٍۭ بَطَآئِنُهَا مِنْ إِسْتَبْرَقٍۢ ۚ وَجَنَى ٱلْجَنَّتَيْنِ دَانٍۢ",
+      "Number": 54
+    },
+    {
+      "RevelationOrder": 5609,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 55
+    },
+    {
+      "RevelationOrder": 5610,
+      "TurkishTranslation": "Orada, bakışlarını yalnız eşlerine çevirmiş, daha önce ne insan ve ne de cinlerin dokunmuş olduğu eşler vardır.",
+      "ArabicText": "فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ",
+      "Number": 56
+    },
+    {
+      "RevelationOrder": 5611,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 57
+    },
+    {
+      "RevelationOrder": 5612,
+      "TurkishTranslation": "Onlar yakut ve mercan gibidirler.",
+      "ArabicText": "كَأَنَّهُنَّ ٱلْيَاقُوتُ وَٱلْمَرْجَانُ",
+      "Number": 58
+    },
+    {
+      "RevelationOrder": 5613,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 59
+    },
+    {
+      "RevelationOrder": 5614,
+      "TurkishTranslation": "İyiliğin karşılığı ancak iyilik değil midir?",
+      "ArabicText": "هَلْ جَزَآءُ ٱلْإِحْسَٰنِ إِلَّا ٱلْإِحْسَٰنُ",
+      "Number": 60
+    },
+    {
+      "RevelationOrder": 5615,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 61
+    },
+    {
+      "RevelationOrder": 5616,
+      "TurkishTranslation": "Bu iki cennetten başka iki cennet daha vardır.",
+      "ArabicText": "وَمِن دُونِهِمَا جَنَّتَانِ",
+      "Number": 62
+    },
+    {
+      "RevelationOrder": 5617,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 63
+    },
+    {
+      "RevelationOrder": 5618,
+      "TurkishTranslation": "Renkleri koyu yeşildir.",
+      "ArabicText": "مُدْهَآمَّتَانِ",
+      "Number": 64
+    },
+    {
+      "RevelationOrder": 5619,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 65
+    },
+    {
+      "RevelationOrder": 5620,
+      "TurkishTranslation": "İkisinde de durmadan fışkıran iki kaynak vardır.",
+      "ArabicText": "فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ",
+      "Number": 66
+    },
+    {
+      "RevelationOrder": 5621,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 67
+    },
+    {
+      "RevelationOrder": 5622,
+      "TurkishTranslation": "İkisinde de türlü türlü meyveler, hurmalıklar ve nar ağaçları vardır.",
+      "ArabicText": "فِيهِمَا فَٰكِهَةٌۭ وَنَخْلٌۭ وَرُمَّانٌۭ",
+      "Number": 68
+    },
+    {
+      "RevelationOrder": 5623,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 69
+    },
+    {
+      "RevelationOrder": 5624,
+      "TurkishTranslation": "Oralarda iyi huylu güzel kadınlar vardır.",
+      "ArabicText": "فِيهِنَّ خَيْرَٰتٌ حِسَانٌۭ",
+      "Number": 70
+    },
+    {
+      "RevelationOrder": 5625,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 71
+    },
+    {
+      "RevelationOrder": 5626,
+      "TurkishTranslation": "Çadırlar içinde ceylan gözlüler vardır.",
+      "ArabicText": "حُورٌۭ مَّقْصُورَٰتٌۭ فِى ٱلْخِيَامِ",
+      "Number": 72
+    },
+    {
+      "RevelationOrder": 5627,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 73
+    },
+    {
+      "RevelationOrder": 5628,
+      "TurkishTranslation": "Onlara daha önce insan da, cin de dokunmamıştır.",
+      "ArabicText": "لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ",
+      "Number": 74
+    },
+    {
+      "RevelationOrder": 5629,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 75
+    },
+    {
+      "RevelationOrder": 5630,
+      "TurkishTranslation": "Cennetlikler orada yeşil yastıklara ve harikulade işlemeli döşeklere yaslanırlar.",
+      "ArabicText": "مُتَّكِـِٔينَ عَلَىٰ رَفْرَفٍ خُضْرٍۢ وَعَبْقَرِىٍّ حِسَانٍۢ",
+      "Number": 76
+    },
+    {
+      "RevelationOrder": 5631,
+      "TurkishTranslation": "Öyleyken, Rabbinizin nimetlerinden hangisini yalanlarsınız?",
+      "ArabicText": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "Number": 77
+    },
+    {
+      "RevelationOrder": 5632,
+      "TurkishTranslation": "Büyük ve pek cömert olan Rabbinin adı ne yücedir!",
+      "ArabicText": "تَبَٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "Number": 78
+    }
+  ],
+  "SurahName": "سُورَةُ الرَّحۡمَٰن"
+}

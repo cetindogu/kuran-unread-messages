@@ -1,0 +1,716 @@
+{
+  "SurahEnglishName": "Al-Muminoon",
+  "SurahNumber": 23,
+  "RevelationOrder": 74,
+  "Verses": [
+    {
+      "RevelationOrder": 3996,
+      "TurkishTranslation": "Müminler saadete ermişlerdir.",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 3997,
+      "TurkishTranslation": "Onlar namazda huşu içindedirler.",
+      "ArabicText": "ٱلَّذِينَ هُمْ فِى صَلَاتِهِمْ خَٰشِعُونَ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 3998,
+      "TurkishTranslation": "Onlar boş şeylerden yüz çevirirler.",
+      "ArabicText": "وَٱلَّذِينَ هُمْ عَنِ ٱللَّغْوِ مُعْرِضُونَ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 3999,
+      "TurkishTranslation": "Onlar zekatlarını verirler.",
+      "ArabicText": "وَٱلَّذِينَ هُمْ لِلزَّكَوٰةِ فَٰعِلُونَ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 4000,
+      "TurkishTranslation": "Onlar, eşleri ve cariyeleri dışında, mahrem yerlerini herkesten korurlar. Doğrusu bunlar yerilemezler.",
+      "ArabicText": "وَٱلَّذِينَ هُمْ لِفُرُوجِهِمْ حَٰفِظُونَ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 4001,
+      "TurkishTranslation": "Onlar, eşleri ve cariyeleri dışında, mahrem yerlerini herkesten korurlar. Doğrusu bunlar yerilemezler.",
+      "ArabicText": "إِلَّا عَلَىٰٓ أَزْوَٰجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَٰنُهُمْ فَإِنَّهُمْ غَيْرُ مَلُومِينَ",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 4002,
+      "TurkishTranslation": "Bu sınırları aşmak isteyenler, işte bunlar aşırı gidenlerdir.",
+      "ArabicText": "فَمَنِ ٱبْتَغَىٰ وَرَآءَ ذَٰلِكَ فَأُو۟لَٰٓئِكَ هُمُ ٱلْعَادُونَ",
+      "Number": 7
+    },
+    {
+      "RevelationOrder": 4003,
+      "TurkishTranslation": "Onlar emanetlerini ve sözlerini yerine getirirler.",
+      "ArabicText": "وَٱلَّذِينَ هُمْ لِأَمَٰنَٰتِهِمْ وَعَهْدِهِمْ رَٰعُونَ",
+      "Number": 8
+    },
+    {
+      "RevelationOrder": 4004,
+      "TurkishTranslation": "Namazlarına riayet ederler.",
+      "ArabicText": "وَٱلَّذِينَ هُمْ عَلَىٰ صَلَوَٰتِهِمْ يُحَافِظُونَ",
+      "Number": 9
+    },
+    {
+      "RevelationOrder": 4005,
+      "TurkishTranslation": "İşte onlar, temelli kalacakları Firdevs cennetine varis olanlardır.",
+      "ArabicText": "أُو۟لَٰٓئِكَ هُمُ ٱلْوَٰرِثُونَ",
+      "Number": 10
+    },
+    {
+      "RevelationOrder": 4006,
+      "TurkishTranslation": "İşte onlar, temelli kalacakları Firdevs cennetine varis olanlardır.",
+      "ArabicText": "ٱلَّذِينَ يَرِثُونَ ٱلْفِرْدَوْسَ هُمْ فِيهَا خَٰلِدُونَ",
+      "Number": 11
+    },
+    {
+      "RevelationOrder": 4007,
+      "TurkishTranslation": "And olsun ki, insanı süzme çamurdan yarattık.",
+      "ArabicText": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ مِن سُلَٰلَةٍۢ مِّن طِينٍۢ",
+      "Number": 12
+    },
+    {
+      "RevelationOrder": 4008,
+      "TurkishTranslation": "Sonra onu nutfe halinde sağlam bir yere yerleştirdik.",
+      "ArabicText": "ثُمَّ جَعَلْنَٰهُ نُطْفَةًۭ فِى قَرَارٍۢ مَّكِينٍۢ",
+      "Number": 13
+    },
+    {
+      "RevelationOrder": 4009,
+      "TurkishTranslation": "Sonra nutfeyi kan pıhtısına çevirdik, kan pıhtısını bir çiğnemlik et yaptık, bir çiğnemlik etten kemikler yarattık, kemiklere de et giydirdik. Sonra onu başka bir yaratık yaptık: Biçim verenlerin en güzeli olan Allah ne uludur!",
+      "ArabicText": "ثُمَّ خَلَقْنَا ٱلنُّطْفَةَ عَلَقَةًۭ فَخَلَقْنَا ٱلْعَلَقَةَ مُضْغَةًۭ فَخَلَقْنَا ٱلْمُضْغَةَ عِظَٰمًۭا فَكَسَوْنَا ٱلْعِظَٰمَ لَحْمًۭا ثُمَّ أَنشَأْنَٰهُ خَلْقًا ءَاخَرَ ۚ فَتَبَارَكَ ٱللَّهُ أَحْسَنُ ٱلْخَٰلِقِينَ",
+      "Number": 14
+    },
+    {
+      "RevelationOrder": 4010,
+      "TurkishTranslation": "Sizler, bütün bunlardan sonra ölürsünüz.",
+      "ArabicText": "ثُمَّ إِنَّكُم بَعْدَ ذَٰلِكَ لَمَيِّتُونَ",
+      "Number": 15
+    },
+    {
+      "RevelationOrder": 4011,
+      "TurkishTranslation": "Şüphesiz kıyamet günü tekrar diriltilirsiniz.",
+      "ArabicText": "ثُمَّ إِنَّكُمْ يَوْمَ ٱلْقِيَٰمَةِ تُبْعَثُونَ",
+      "Number": 16
+    },
+    {
+      "RevelationOrder": 4012,
+      "TurkishTranslation": "And olsun ki, üstünüzde yedi tabaka yarattık. Biz, yarattığımızdan habersiz değiliz.",
+      "ArabicText": "وَلَقَدْ خَلَقْنَا فَوْقَكُمْ سَبْعَ طَرَآئِقَ وَمَا كُنَّا عَنِ ٱلْخَلْقِ غَٰفِلِينَ",
+      "Number": 17
+    },
+    {
+      "RevelationOrder": 4013,
+      "TurkishTranslation": "Gökten suyu ölçülü indirdik de, onu yerde durdurduk. Şüphesiz onu gidermeye de kadiriz.",
+      "ArabicText": "وَأَنزَلْنَا مِنَ ٱلسَّمَآءِ مَآءًۢ بِقَدَرٍۢ فَأَسْكَنَّٰهُ فِى ٱلْأَرْضِ ۖ وَإِنَّا عَلَىٰ ذَهَابٍۭ بِهِۦ لَقَٰدِرُونَ",
+      "Number": 18
+    },
+    {
+      "RevelationOrder": 4014,
+      "TurkishTranslation": "Onunla, içinde, yediğiniz birçok meyvalar bulunan hurmalık ve üzüm bağları, Tur-i Sina'da yetişen, yiyenlere, yağ ve katık veren zeytin ağacını var ettik.",
+      "ArabicText": "فَأَنشَأْنَا لَكُم بِهِۦ جَنَّٰتٍۢ مِّن نَّخِيلٍۢ وَأَعْنَٰبٍۢ لَّكُمْ فِيهَا فَوَٰكِهُ كَثِيرَةٌۭ وَمِنْهَا تَأْكُلُونَ",
+      "Number": 19
+    },
+    {
+      "RevelationOrder": 4015,
+      "TurkishTranslation": "Onunla, içinde, yediğiniz birçok meyvalar bulunan hurmalık ve üzüm bağları, Tur-i Sina'da yetişen, yiyenlere, yağ ve katık veren zeytin ağacını var ettik.",
+      "ArabicText": "وَشَجَرَةًۭ تَخْرُجُ مِن طُورِ سَيْنَآءَ تَنۢبُتُ بِٱلدُّهْنِ وَصِبْغٍۢ لِّلْءَاكِلِينَ",
+      "Number": 20
+    },
+    {
+      "RevelationOrder": 4016,
+      "TurkishTranslation": "Ehli hayvanlarda size ders vardır; onlardan çıkan sütten size içiririz; onlarda daha birçok menfaatiniz vardır. Onlardan yersiniz.",
+      "ArabicText": "وَإِنَّ لَكُمْ فِى ٱلْأَنْعَٰمِ لَعِبْرَةًۭ ۖ نُّسْقِيكُم مِّمَّا فِى بُطُونِهَا وَلَكُمْ فِيهَا مَنَٰفِعُ كَثِيرَةٌۭ وَمِنْهَا تَأْكُلُونَ",
+      "Number": 21
+    },
+    {
+      "RevelationOrder": 4017,
+      "TurkishTranslation": "Hem onların ve hem de gemilerin üzerinde taşınırsınız.",
+      "ArabicText": "وَعَلَيْهَا وَعَلَى ٱلْفُلْكِ تُحْمَلُونَ",
+      "Number": 22
+    },
+    {
+      "RevelationOrder": 4018,
+      "TurkishTranslation": "And olsun ki Nuh'u milletine gönderdik; onlara: \"Ey milletim! Allah'a kulluk edin; O'ndan başka tanrınız yoktur; sakınmaz mısınız?\" dedi.",
+      "ArabicText": "وَلَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦ فَقَالَ يَٰقَوْمِ ٱعْبُدُوا۟ ٱللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُۥٓ ۖ أَفَلَا تَتَّقُونَ",
+      "Number": 23
+    },
+    {
+      "RevelationOrder": 4019,
+      "TurkishTranslation": "Milletinin inkarcı ileri gelenleri: \"Bu, sizin gibi bir insandan başka birşey değildir. Sizden üstün olmak istiyor. Allah dilemiş olsaydı melekler indirirdi. İlk atalarımızdan beri böyle birşey işitmedik. Bu adamda nedense biraz delilik var, bir süreye kadar onu gözetleyin\" dediler.",
+      "ArabicText": "فَقَالَ ٱلْمَلَؤُا۟ ٱلَّذِينَ كَفَرُوا۟ مِن قَوْمِهِۦ مَا هَٰذَآ إِلَّا بَشَرٌۭ مِّثْلُكُمْ يُرِيدُ أَن يَتَفَضَّلَ عَلَيْكُمْ وَلَوْ شَآءَ ٱللَّهُ لَأَنزَلَ مَلَٰٓئِكَةًۭ مَّا سَمِعْنَا بِهَٰذَا فِىٓ ءَابَآئِنَا ٱلْأَوَّلِينَ",
+      "Number": 24
+    },
+    {
+      "RevelationOrder": 4020,
+      "TurkishTranslation": "Milletinin inkarcı ileri gelenleri: \"Bu, sizin gibi bir insandan başka birşey değildir. Sizden üstün olmak istiyor. Allah dilemiş olsaydı melekler indirirdi. İlk atalarımızdan beri böyle birşey işitmedik. Bu adamda nedense biraz delilik var, bir süreye kadar onu gözetleyin\" dediler.",
+      "ArabicText": "إِنْ هُوَ إِلَّا رَجُلٌۢ بِهِۦ جِنَّةٌۭ فَتَرَبَّصُوا۟ بِهِۦ حَتَّىٰ حِينٍۢ",
+      "Number": 25
+    },
+    {
+      "RevelationOrder": 4021,
+      "TurkishTranslation": "Nuh: \"Rabbim! Beni yalanlamalarına karşılık bana yardım et\" dedi.",
+      "ArabicText": "قَالَ رَبِّ ٱنصُرْنِى بِمَا كَذَّبُونِ",
+      "Number": 26
+    },
+    {
+      "RevelationOrder": 4022,
+      "TurkishTranslation": "Bunun üzerine ona şöyle vahyettik: \"Nezaretimiz altında, sana bildirdiğimiz gibi gemiyi yap; buyruğumuz gelip tandırdan sular kaynayınca her cinsten birer çifti ve aleyhine hüküm verilmiş olanın dışında kalan çoluk çocuğunu alıp gemiye bindir. Haksızlık yapanlar için Bana baş vurma, çünkü onlar suda boğulacaklardır.\"",
+      "ArabicText": "فَأَوْحَيْنَآ إِلَيْهِ أَنِ ٱصْنَعِ ٱلْفُلْكَ بِأَعْيُنِنَا وَوَحْيِنَا فَإِذَا جَآءَ أَمْرُنَا وَفَارَ ٱلتَّنُّورُ ۙ فَٱسْلُكْ فِيهَا مِن كُلٍّۢ زَوْجَيْنِ ٱثْنَيْنِ وَأَهْلَكَ إِلَّا مَن سَبَقَ عَلَيْهِ ٱلْقَوْلُ مِنْهُمْ ۖ وَلَا تُخَٰطِبْنِى فِى ٱلَّذِينَ ظَلَمُوٓا۟ ۖ إِنَّهُم مُّغْرَقُونَ",
+      "Number": 27
+    },
+    {
+      "RevelationOrder": 4023,
+      "TurkishTranslation": "Ey Nuh! Sen ve beraberindekiler gemiye yerleşince: \"Bizi zalim milletten kurtaran Allah'a hamdolsun\" de.",
+      "ArabicText": "فَإِذَا ٱسْتَوَيْتَ أَنتَ وَمَن مَّعَكَ عَلَى ٱلْفُلْكِ فَقُلِ ٱلْحَمْدُ لِلَّهِ ٱلَّذِى نَجَّىٰنَا مِنَ ٱلْقَوْمِ ٱلظَّٰلِمِينَ",
+      "Number": 28
+    },
+    {
+      "RevelationOrder": 4024,
+      "TurkishTranslation": "\"Rabbim! Beni mübarek bir yere indir. Sen indirenlerin en iyisisin\" de.",
+      "ArabicText": "وَقُل رَّبِّ أَنزِلْنِى مُنزَلًۭا مُّبَارَكًۭا وَأَنتَ خَيْرُ ٱلْمُنزِلِينَ",
+      "Number": 29
+    },
+    {
+      "RevelationOrder": 4025,
+      "TurkishTranslation": "Doğrusu bunlarda dersler vardır. Biz şüphesiz insanları denemekteyiz.",
+      "ArabicText": "إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍۢ وَإِن كُنَّا لَمُبْتَلِينَ",
+      "Number": 30
+    },
+    {
+      "RevelationOrder": 4026,
+      "TurkishTranslation": "Bunların ardından başka nesiller varettik.",
+      "ArabicText": "ثُمَّ أَنشَأْنَا مِنۢ بَعْدِهِمْ قَرْنًا ءَاخَرِينَ",
+      "Number": 31
+    },
+    {
+      "RevelationOrder": 4027,
+      "TurkishTranslation": "Onlara aralarından: \"Allah\"a kulluk edin, O'ndan başka tanrınız yoktur, sakınmaz mısınız?\" diyen bir elçi gönderdik.",
+      "ArabicText": "فَأَرْسَلْنَا فِيهِمْ رَسُولًۭا مِّنْهُمْ أَنِ ٱعْبُدُوا۟ ٱللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُۥٓ ۖ أَفَلَا تَتَّقُونَ",
+      "Number": 32
+    },
+    {
+      "RevelationOrder": 4028,
+      "TurkishTranslation": "Onun, inkarcı ve ahirete kavuşmayı yalanlayan milletinin ileri gelenleri ki Biz onlara bu dünya hayatında nimet vermiştik şöyle dediler: \"Bu, yediğinizden yiyen, içtiğinizden içen sizin gibi bir insandan başka birşey değildir.\"",
+      "ArabicText": "وَقَالَ ٱلْمَلَأُ مِن قَوْمِهِ ٱلَّذِينَ كَفَرُوا۟ وَكَذَّبُوا۟ بِلِقَآءِ ٱلْءَاخِرَةِ وَأَتْرَفْنَٰهُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا مَا هَٰذَآ إِلَّا بَشَرٌۭ مِّثْلُكُمْ يَأْكُلُ مِمَّا تَأْكُلُونَ مِنْهُ وَيَشْرَبُ مِمَّا تَشْرَبُونَ",
+      "Number": 33
+    },
+    {
+      "RevelationOrder": 4029,
+      "TurkishTranslation": "\"Kendiniz gibi bir insana itaat ederseniz hüsrana uğrayacağınızda hiç şüphe yoktur.\"",
+      "ArabicText": "وَلَئِنْ أَطَعْتُم بَشَرًۭا مِّثْلَكُمْ إِنَّكُمْ إِذًۭا لَّخَٰسِرُونَ",
+      "Number": 34
+    },
+    {
+      "RevelationOrder": 4030,
+      "TurkishTranslation": "\"Öldüğünüz, toprak ve kemik yığını olduğunuz zaman tekrar dirilmenizle sizi tehdit mi ediyor?\"",
+      "ArabicText": "أَيَعِدُكُمْ أَنَّكُمْ إِذَا مِتُّمْ وَكُنتُمْ تُرَابًۭا وَعِظَٰمًا أَنَّكُم مُّخْرَجُونَ",
+      "Number": 35
+    },
+    {
+      "RevelationOrder": 4031,
+      "TurkishTranslation": "\"Oysa tehdit edildiğiniz şey ne kadar, hem de ne kadar uzak!\"",
+      "ArabicText": "۞ هَيْهَاتَ هَيْهَاتَ لِمَا تُوعَدُونَ",
+      "Number": 36
+    },
+    {
+      "RevelationOrder": 4032,
+      "TurkishTranslation": "\"Hayat ancak bu dünyadakidir. Ölürüz ve yaşarız (kimimiz ölür kimimiz doğar); tekrar diriltilmeyiz.\"",
+      "ArabicText": "إِنْ هِىَ إِلَّا حَيَاتُنَا ٱلدُّنْيَا نَمُوتُ وَنَحْيَا وَمَا نَحْنُ بِمَبْعُوثِينَ",
+      "Number": 37
+    },
+    {
+      "RevelationOrder": 4033,
+      "TurkishTranslation": "\"Bu, sadece Allah'a karşı yalan uyduranın biridir. Biz ona inanmayız.\"",
+      "ArabicText": "إِنْ هُوَ إِلَّا رَجُلٌ ٱفْتَرَىٰ عَلَى ٱللَّهِ كَذِبًۭا وَمَا نَحْنُ لَهُۥ بِمُؤْمِنِينَ",
+      "Number": 38
+    },
+    {
+      "RevelationOrder": 4034,
+      "TurkishTranslation": "O peygamber: \"Rabbim! Beni yalancı saymalarına karşılık bana yardım et\" dedi.",
+      "ArabicText": "قَالَ رَبِّ ٱنصُرْنِى بِمَا كَذَّبُونِ",
+      "Number": 39
+    },
+    {
+      "RevelationOrder": 4035,
+      "TurkishTranslation": "Allah da: \"Az sonra pişman olacaklar\" buyurdu.",
+      "ArabicText": "قَالَ عَمَّا قَلِيلٍۢ لَّيُصْبِحُنَّ نَٰدِمِينَ",
+      "Number": 40
+    },
+    {
+      "RevelationOrder": 4036,
+      "TurkishTranslation": "Gerçekten, onları bir çığlık yakaladı ve onları süprüntü yığını haline getirdik. Haksızlık eden millet, rahmetden ırak olsun!",
+      "ArabicText": "فَأَخَذَتْهُمُ ٱلصَّيْحَةُ بِٱلْحَقِّ فَجَعَلْنَٰهُمْ غُثَآءًۭ ۚ فَبُعْدًۭا لِّلْقَوْمِ ٱلظَّٰلِمِينَ",
+      "Number": 41
+    },
+    {
+      "RevelationOrder": 4037,
+      "TurkishTranslation": "Ardlarından başka nesiller varettik.",
+      "ArabicText": "ثُمَّ أَنشَأْنَا مِنۢ بَعْدِهِمْ قُرُونًا ءَاخَرِينَ",
+      "Number": 42
+    },
+    {
+      "RevelationOrder": 4038,
+      "TurkishTranslation": "Hiçbir ümmet, kendi süresini ne çabuklaştırabilir ve ne de geciktirebilir.",
+      "ArabicText": "مَا تَسْبِقُ مِنْ أُمَّةٍ أَجَلَهَا وَمَا يَسْتَـْٔخِرُونَ",
+      "Number": 43
+    },
+    {
+      "RevelationOrder": 4039,
+      "TurkishTranslation": "Sonra birbiri peşinden peygamberlerimizi gönderdik. Her ümmete peygamberi geldikçe onu yalancı saydılar. Onları birbiri peşinden yok edip hepsini birer efsane yaptık. İnanmayan millet, rahmetden ırak olsun!",
+      "ArabicText": "ثُمَّ أَرْسَلْنَا رُسُلَنَا تَتْرَا ۖ كُلَّ مَا جَآءَ أُمَّةًۭ رَّسُولُهَا كَذَّبُوهُ ۚ فَأَتْبَعْنَا بَعْضَهُم بَعْضًۭا وَجَعَلْنَٰهُمْ أَحَادِيثَ ۚ فَبُعْدًۭا لِّقَوْمٍۢ لَّا يُؤْمِنُونَ",
+      "Number": 44
+    },
+    {
+      "RevelationOrder": 4040,
+      "TurkishTranslation": "Sonra Musa ve kardeşi Harun'u, Firavun ve erkanına mucizelerimiz ve apaçık delille gönderdik. Büyüklük tasladılar. Zaten mağrur bir topluluktular.",
+      "ArabicText": "ثُمَّ أَرْسَلْنَا مُوسَىٰ وَأَخَاهُ هَٰرُونَ بِـَٔايَٰتِنَا وَسُلْطَٰنٍۢ مُّبِينٍ",
+      "Number": 45
+    },
+    {
+      "RevelationOrder": 4041,
+      "TurkishTranslation": "Sonra Musa ve kardeşi Harun'u, Firavun ve erkanına mucizelerimiz ve apaçık delille gönderdik. Büyüklük tasladılar. Zaten mağrur bir topluluktular.",
+      "ArabicText": "إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦ فَٱسْتَكْبَرُوا۟ وَكَانُوا۟ قَوْمًا عَالِينَ",
+      "Number": 46
+    },
+    {
+      "RevelationOrder": 4042,
+      "TurkishTranslation": "Bu yüzden: \"Milletleri bize kul iken, bizim gibi iki insana mı inanacağız?\" deyip onları yalancı saydılar. Bu yüzden yok edildiler.",
+      "ArabicText": "فَقَالُوٓا۟ أَنُؤْمِنُ لِبَشَرَيْنِ مِثْلِنَا وَقَوْمُهُمَا لَنَا عَٰبِدُونَ",
+      "Number": 47
+    },
+    {
+      "RevelationOrder": 4043,
+      "TurkishTranslation": "Bu yüzden: \"Milletleri bize kul iken, bizim gibi iki insana mı inanacağız?\" deyip onları yalancı saydılar. Bu yüzden yok edildiler.",
+      "ArabicText": "فَكَذَّبُوهُمَا فَكَانُوا۟ مِنَ ٱلْمُهْلَكِينَ",
+      "Number": 48
+    },
+    {
+      "RevelationOrder": 4044,
+      "TurkishTranslation": "And olsun ki Musa'ya, doğru yola girsinler diye Kitap verdik.",
+      "ArabicText": "وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَٰبَ لَعَلَّهُمْ يَهْتَدُونَ",
+      "Number": 49
+    },
+    {
+      "RevelationOrder": 4045,
+      "TurkishTranslation": "Meryem oğlunu da, annesini de mucize kıldık. Her ikisini de, pınarı bulunan, oturmaya elverişli yüksek bir yere yerleştirdik.",
+      "ArabicText": "وَجَعَلْنَا ٱبْنَ مَرْيَمَ وَأُمَّهُۥٓ ءَايَةًۭ وَءَاوَيْنَٰهُمَآ إِلَىٰ رَبْوَةٍۢ ذَاتِ قَرَارٍۢ وَمَعِينٍۢ",
+      "Number": 50
+    },
+    {
+      "RevelationOrder": 4046,
+      "TurkishTranslation": "Ey Peygamberler! Temiz şeylerden yiyin, yararlı iş işleyin; doğrusu Ben, yaptığınızı bilirim.",
+      "ArabicText": "يَٰٓأَيُّهَا ٱلرُّسُلُ كُلُوا۟ مِنَ ٱلطَّيِّبَٰتِ وَٱعْمَلُوا۟ صَٰلِحًا ۖ إِنِّى بِمَا تَعْمَلُونَ عَلِيمٌۭ",
+      "Number": 51
+    },
+    {
+      "RevelationOrder": 4047,
+      "TurkishTranslation": "Şüphesiz bu Müslümanlık, bir tek din olarak sizin dininizdir ve Ben de Rabbinizim; öyleyse Benden sakının.",
+      "ArabicText": "وَإِنَّ هَٰذِهِۦٓ أُمَّتُكُمْ أُمَّةًۭ وَٰحِدَةًۭ وَأَنَا۠ رَبُّكُمْ فَٱتَّقُونِ",
+      "Number": 52
+    },
+    {
+      "RevelationOrder": 4048,
+      "TurkishTranslation": "Ama insanlar din konusunda aralarında bölük bölük oldular. Her bölük kendi tuttuğu yoldan memnundur.",
+      "ArabicText": "فَتَقَطَّعُوٓا۟ أَمْرَهُم بَيْنَهُمْ زُبُرًۭا ۖ كُلُّ حِزْبٍۭ بِمَا لَدَيْهِمْ فَرِحُونَ",
+      "Number": 53
+    },
+    {
+      "RevelationOrder": 4049,
+      "TurkishTranslation": "Onları bir süreye kadar sapıklıklarıyla başbaşa bırak.",
+      "ArabicText": "فَذَرْهُمْ فِى غَمْرَتِهِمْ حَتَّىٰ حِينٍ",
+      "Number": 54
+    },
+    {
+      "RevelationOrder": 4050,
+      "TurkishTranslation": "Kendilerine mal ve oğullar vermekle, iyiliklerde onlar için acele ettiğimizi mi zannederler? Hayır; farkında değiller.",
+      "ArabicText": "أَيَحْسَبُونَ أَنَّمَا نُمِدُّهُم بِهِۦ مِن مَّالٍۢ وَبَنِينَ",
+      "Number": 55
+    },
+    {
+      "RevelationOrder": 4051,
+      "TurkishTranslation": "Kendilerine mal ve oğullar vermekle, iyiliklerde onlar için acele ettiğimizi mi zannederler? Hayır; farkında değiller.",
+      "ArabicText": "نُسَارِعُ لَهُمْ فِى ٱلْخَيْرَٰتِ ۚ بَل لَّا يَشْعُرُونَ",
+      "Number": 56
+    },
+    {
+      "RevelationOrder": 4052,
+      "TurkishTranslation": "Rablerinden korkarak titreyenler, Rablerinin ayetlerine inananlar, Rablerine eş koşmayanlar, Rablerine dönecekleri için kalbleri ürpererek vermeleri gerekeni verenler, işte onlar iyi işlerde yarış ederler, o uğurda ileri geçerler.",
+      "ArabicText": "إِنَّ ٱلَّذِينَ هُم مِّنْ خَشْيَةِ رَبِّهِم مُّشْفِقُونَ",
+      "Number": 57
+    },
+    {
+      "RevelationOrder": 4053,
+      "TurkishTranslation": "Rablerinden korkarak titreyenler, Rablerinin ayetlerine inananlar, Rablerine eş koşmayanlar, Rablerine dönecekleri için kalbleri ürpererek vermeleri gerekeni verenler, işte onlar iyi işlerde yarış ederler, o uğurda ileri geçerler.",
+      "ArabicText": "وَٱلَّذِينَ هُم بِـَٔايَٰتِ رَبِّهِمْ يُؤْمِنُونَ",
+      "Number": 58
+    },
+    {
+      "RevelationOrder": 4054,
+      "TurkishTranslation": "Rablerinden korkarak titreyenler, Rablerinin ayetlerine inananlar, Rablerine eş koşmayanlar, Rablerine dönecekleri için kalbleri ürpererek vermeleri gerekeni verenler, işte onlar iyi işlerde yarış ederler, o uğurda ileri geçerler.",
+      "ArabicText": "وَٱلَّذِينَ هُم بِرَبِّهِمْ لَا يُشْرِكُونَ",
+      "Number": 59
+    },
+    {
+      "RevelationOrder": 4055,
+      "TurkishTranslation": "Rablerinden korkarak titreyenler, Rablerinin ayetlerine inananlar, Rablerine eş koşmayanlar, Rablerine dönecekleri için kalbleri ürpererek vermeleri gerekeni verenler, işte onlar iyi işlerde yarış ederler, o uğurda ileri geçerler.",
+      "ArabicText": "وَٱلَّذِينَ يُؤْتُونَ مَآ ءَاتَوا۟ وَّقُلُوبُهُمْ وَجِلَةٌ أَنَّهُمْ إِلَىٰ رَبِّهِمْ رَٰجِعُونَ",
+      "Number": 60
+    },
+    {
+      "RevelationOrder": 4056,
+      "TurkishTranslation": "Rablerinden korkarak titreyenler, Rablerinin ayetlerine inananlar, Rablerine eş koşmayanlar, Rablerine dönecekleri için kalbleri ürpererek vermeleri gerekeni verenler, işte onlar iyi işlerde yarış ederler, o uğurda ileri geçerler.",
+      "ArabicText": "أُو۟لَٰٓئِكَ يُسَٰرِعُونَ فِى ٱلْخَيْرَٰتِ وَهُمْ لَهَا سَٰبِقُونَ",
+      "Number": 61
+    },
+    {
+      "RevelationOrder": 4057,
+      "TurkishTranslation": "Biz herkese ancak gücünün yeteceği kadar yükleriz. Katımızda gerçeği söyleyen bir kitap vardır; onlar haksızlığa uğratılmazlar.",
+      "ArabicText": "وَلَا نُكَلِّفُ نَفْسًا إِلَّا وُسْعَهَا ۖ وَلَدَيْنَا كِتَٰبٌۭ يَنطِقُ بِٱلْحَقِّ ۚ وَهُمْ لَا يُظْلَمُونَ",
+      "Number": 62
+    },
+    {
+      "RevelationOrder": 4058,
+      "TurkishTranslation": "Ama, kafirlerin kalbleri bundan habersizdir. Bundan başka da onların yapageldikleri işler de vardır.",
+      "ArabicText": "بَلْ قُلُوبُهُمْ فِى غَمْرَةٍۢ مِّنْ هَٰذَا وَلَهُمْ أَعْمَٰلٌۭ مِّن دُونِ ذَٰلِكَ هُمْ لَهَا عَٰمِلُونَ",
+      "Number": 63
+    },
+    {
+      "RevelationOrder": 4059,
+      "TurkishTranslation": "Sonunda şımarık varlıklılarını azabla yakaladığımız zaman feryat ederler.",
+      "ArabicText": "حَتَّىٰٓ إِذَآ أَخَذْنَا مُتْرَفِيهِم بِٱلْعَذَابِ إِذَا هُمْ يَجْـَٔرُونَ",
+      "Number": 64
+    },
+    {
+      "RevelationOrder": 4060,
+      "TurkishTranslation": "Onlara şöyle deriz: \"Bugün feryat etmeyin, doğrusu katımızdan bir yardım görmezsiniz.\"",
+      "ArabicText": "لَا تَجْـَٔرُوا۟ ٱلْيَوْمَ ۖ إِنَّكُم مِّنَّا لَا تُنصَرُونَ",
+      "Number": 65
+    },
+    {
+      "RevelationOrder": 4061,
+      "TurkishTranslation": "\"Ayetlerim size okunduğunda büyüklük taslayıp, gece ağzınıza geleni söyleyerek ardınıza dönüyordunuz.\"",
+      "ArabicText": "قَدْ كَانَتْ ءَايَٰتِى تُتْلَىٰ عَلَيْكُمْ فَكُنتُمْ عَلَىٰٓ أَعْقَٰبِكُمْ تَنكِصُونَ",
+      "Number": 66
+    },
+    {
+      "RevelationOrder": 4062,
+      "TurkishTranslation": "\"Ayetlerim size okunduğunda büyüklük taslayıp, gece ağzınıza geleni söyleyerek ardınıza dönüyordunuz.\"",
+      "ArabicText": "مُسْتَكْبِرِينَ بِهِۦ سَٰمِرًۭا تَهْجُرُونَ",
+      "Number": 67
+    },
+    {
+      "RevelationOrder": 4063,
+      "TurkishTranslation": "Söyleneni hiç düşünmezler mi? Yoksa onlara, ilk atalarına gelmeyen bir şey mi geldi?",
+      "ArabicText": "أَفَلَمْ يَدَّبَّرُوا۟ ٱلْقَوْلَ أَمْ جَآءَهُم مَّا لَمْ يَأْتِ ءَابَآءَهُمُ ٱلْأَوَّلِينَ",
+      "Number": 68
+    },
+    {
+      "RevelationOrder": 4064,
+      "TurkishTranslation": "Veya peygamberlerini tanımadılar da; bu yüzden mi onu inkar ediyorlar?",
+      "ArabicText": "أَمْ لَمْ يَعْرِفُوا۟ رَسُولَهُمْ فَهُمْ لَهُۥ مُنكِرُونَ",
+      "Number": 69
+    },
+    {
+      "RevelationOrder": 4065,
+      "TurkishTranslation": "Ya da: \"Onda delilik var\" diyorlar öyle mi? Hayır; onlara gerçeği getirmiştir, ama çoğu ondan hoşlanmamaktadır.",
+      "ArabicText": "أَمْ يَقُولُونَ بِهِۦ جِنَّةٌۢ ۚ بَلْ جَآءَهُم بِٱلْحَقِّ وَأَكْثَرُهُمْ لِلْحَقِّ كَٰرِهُونَ",
+      "Number": 70
+    },
+    {
+      "RevelationOrder": 4066,
+      "TurkishTranslation": "Eğer gerçek onların heveslerine uysaydı, gökler, yer ve onlarda bulananlar bozulup giderdi. Onlara, kendilerine öğüt veren bir şey getirdik; onlar ise öğütlerinden yüz çevirirler.",
+      "ArabicText": "وَلَوِ ٱتَّبَعَ ٱلْحَقُّ أَهْوَآءَهُمْ لَفَسَدَتِ ٱلسَّمَٰوَٰتُ وَٱلْأَرْضُ وَمَن فِيهِنَّ ۚ بَلْ أَتَيْنَٰهُم بِذِكْرِهِمْ فَهُمْ عَن ذِكْرِهِم مُّعْرِضُونَ",
+      "Number": 71
+    },
+    {
+      "RevelationOrder": 4067,
+      "TurkishTranslation": "Yoksa sen onlardan bir ücret mi istiyorsun? Rabbinin ecri daha iyidir. O, rızık verenlerin en hayırlısıdır.",
+      "ArabicText": "أَمْ تَسْـَٔلُهُمْ خَرْجًۭا فَخَرَاجُ رَبِّكَ خَيْرٌۭ ۖ وَهُوَ خَيْرُ ٱلرَّٰزِقِينَ",
+      "Number": 72
+    },
+    {
+      "RevelationOrder": 4068,
+      "TurkishTranslation": "Aslında sen onları doğru yola çağırıyorsun ama, ahirete inanmayanlar bu yoldan sapmaktadırlar.",
+      "ArabicText": "وَإِنَّكَ لَتَدْعُوهُمْ إِلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+      "Number": 73
+    },
+    {
+      "RevelationOrder": 4069,
+      "TurkishTranslation": "Aslında sen onları doğru yola çağırıyorsun ama, ahirete inanmayanlar bu yoldan sapmaktadırlar.",
+      "ArabicText": "وَإِنَّ ٱلَّذِينَ لَا يُؤْمِنُونَ بِٱلْءَاخِرَةِ عَنِ ٱلصِّرَٰطِ لَنَٰكِبُونَ",
+      "Number": 74
+    },
+    {
+      "RevelationOrder": 4070,
+      "TurkishTranslation": "Biz onlara acısak ve başlarındaki sıkıntıyı gidersek bile, azgınlıkları içinde bocalayıp kalırlar.",
+      "ArabicText": "۞ وَلَوْ رَحِمْنَٰهُمْ وَكَشَفْنَا مَا بِهِم مِّن ضُرٍّۢ لَّلَجُّوا۟ فِى طُغْيَٰنِهِمْ يَعْمَهُونَ",
+      "Number": 75
+    },
+    {
+      "RevelationOrder": 4071,
+      "TurkishTranslation": "And olsun ki, Biz onları azabla yakalamıştık, yine de Rablerine boyun eğmemiş ve yakarmamışlardı.",
+      "ArabicText": "وَلَقَدْ أَخَذْنَٰهُم بِٱلْعَذَابِ فَمَا ٱسْتَكَانُوا۟ لِرَبِّهِمْ وَمَا يَتَضَرَّعُونَ",
+      "Number": 76
+    },
+    {
+      "RevelationOrder": 4072,
+      "TurkishTranslation": "Sonunda onlara şiddetli bir azap kapısı açtığımız zaman ümitsiz kalıverdiler.",
+      "ArabicText": "حَتَّىٰٓ إِذَا فَتَحْنَا عَلَيْهِم بَابًۭا ذَا عَذَابٍۢ شَدِيدٍ إِذَا هُمْ فِيهِ مُبْلِسُونَ",
+      "Number": 77
+    },
+    {
+      "RevelationOrder": 4073,
+      "TurkishTranslation": "Oysa, sizin için kulaklar, gözler ve kalbler vareden O'dur. Pek az şükrediyorsunuz.",
+      "ArabicText": "وَهُوَ ٱلَّذِىٓ أَنشَأَ لَكُمُ ٱلسَّمْعَ وَٱلْأَبْصَٰرَ وَٱلْأَفْـِٔدَةَ ۚ قَلِيلًۭا مَّا تَشْكُرُونَ",
+      "Number": 78
+    },
+    {
+      "RevelationOrder": 4074,
+      "TurkishTranslation": "Sizi yerde yaratıp yayan O'dur ve O'nun huzurunda toplanacaksınız.",
+      "ArabicText": "وَهُوَ ٱلَّذِى ذَرَأَكُمْ فِى ٱلْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ",
+      "Number": 79
+    },
+    {
+      "RevelationOrder": 4075,
+      "TurkishTranslation": "Dirilten de, öldüren de O'dur. Gece ile gündüzün birbiri ardından gitmesi de O'nun emrine bağlıdır. Düşünmez misiniz?",
+      "ArabicText": "وَهُوَ ٱلَّذِى يُحْىِۦ وَيُمِيتُ وَلَهُ ٱخْتِلَٰفُ ٱلَّيْلِ وَٱلنَّهَارِ ۚ أَفَلَا تَعْقِلُونَ",
+      "Number": 80
+    },
+    {
+      "RevelationOrder": 4076,
+      "TurkishTranslation": "Hayır; yine de öncekilerin dediklerini derler.",
+      "ArabicText": "بَلْ قَالُوا۟ مِثْلَ مَا قَالَ ٱلْأَوَّلُونَ",
+      "Number": 81
+    },
+    {
+      "RevelationOrder": 4077,
+      "TurkishTranslation": "Öncekiler: \"Ölüp toprak ve bir yığın kemik olduğumuzda mı diriltileceğiz? And olsun ki biz ve daha önce de babalarımız tehdit edilmişti; bu, öncekilerin masallarından başka birşey değildir\" demişlerdi.",
+      "ArabicText": "قَالُوٓا۟ أَءِذَا مِتْنَا وَكُنَّا تُرَابًۭا وَعِظَٰمًا أَءِنَّا لَمَبْعُوثُونَ",
+      "Number": 82
+    },
+    {
+      "RevelationOrder": 4078,
+      "TurkishTranslation": "Öncekiler: \"Ölüp toprak ve bir yığın kemik olduğumuzda mı diriltileceğiz? And olsun ki biz ve daha önce de babalarımız tehdit edilmişti; bu, öncekilerin masallarından başka birşey değildir\" demişlerdi.",
+      "ArabicText": "لَقَدْ وُعِدْنَا نَحْنُ وَءَابَآؤُنَا هَٰذَا مِن قَبْلُ إِنْ هَٰذَآ إِلَّآ أَسَٰطِيرُ ٱلْأَوَّلِينَ",
+      "Number": 83
+    },
+    {
+      "RevelationOrder": 4079,
+      "TurkishTranslation": "De ki: \"Biliyorsanız söyleyin, yer ve onda bulunanlar kimindir?\"",
+      "ArabicText": "قُل لِّمَنِ ٱلْأَرْضُ وَمَن فِيهَآ إِن كُنتُمْ تَعْلَمُونَ",
+      "Number": 84
+    },
+    {
+      "RevelationOrder": 4080,
+      "TurkishTranslation": "\"Allah'ındır\" diyecekler, \"Öyleyse ders almaz mısınız?\" de.",
+      "ArabicText": "سَيَقُولُونَ لِلَّهِ ۚ قُلْ أَفَلَا تَذَكَّرُونَ",
+      "Number": 85
+    },
+    {
+      "RevelationOrder": 4081,
+      "TurkishTranslation": "\"Yedi göğün de Rabbi, yüce arşın da Rabbi kimdir?\" de.",
+      "ArabicText": "قُلْ مَن رَّبُّ ٱلسَّمَٰوَٰتِ ٱلسَّبْعِ وَرَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+      "Number": 86
+    },
+    {
+      "RevelationOrder": 4082,
+      "TurkishTranslation": "\"Allah'tır\" diyecekler! \"Öyleyse O'na karşı gelmekten sakınmaz mısınız?\" de.",
+      "ArabicText": "سَيَقُولُونَ لِلَّهِ ۚ قُلْ أَفَلَا تَتَّقُونَ",
+      "Number": 87
+    },
+    {
+      "RevelationOrder": 4083,
+      "TurkishTranslation": "\"Biliyorsanız söyleyin her şeyin hükümranlığı elinde olan, barındıran fakat himayeye muhtaç olmayan kimdir?\"",
+      "ArabicText": "قُلْ مَنۢ بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍۢ وَهُوَ يُجِيرُ وَلَا يُجَارُ عَلَيْهِ إِن كُنتُمْ تَعْلَمُونَ",
+      "Number": 88
+    },
+    {
+      "RevelationOrder": 4084,
+      "TurkishTranslation": "\"Allah'tır\" diyecekler; \"Öyleyse nasıl aldanıyorsunuz\" de.",
+      "ArabicText": "سَيَقُولُونَ لِلَّهِ ۚ قُلْ فَأَنَّىٰ تُسْحَرُونَ",
+      "Number": 89
+    },
+    {
+      "RevelationOrder": 4085,
+      "TurkishTranslation": "Hayır; Biz onlara gerçeği getirdik ama, onlar yalancıdırlar.",
+      "ArabicText": "بَلْ أَتَيْنَٰهُم بِٱلْحَقِّ وَإِنَّهُمْ لَكَٰذِبُونَ",
+      "Number": 90
+    },
+    {
+      "RevelationOrder": 4086,
+      "TurkishTranslation": "Allah çocuk edinmemiştir; O'nun yanında hiçbir tanrı yoktur, olsaydı, her tanrı kendi yarattığı ile beraber gider ve birbirinden üstün olmağa çalışırlardı. Allah onların vasıflandırdıklarından münezzehtir.",
+      "ArabicText": "مَا ٱتَّخَذَ ٱللَّهُ مِن وَلَدٍۢ وَمَا كَانَ مَعَهُۥ مِنْ إِلَٰهٍ ۚ إِذًۭا لَّذَهَبَ كُلُّ إِلَٰهٍۭ بِمَا خَلَقَ وَلَعَلَا بَعْضُهُمْ عَلَىٰ بَعْضٍۢ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يَصِفُونَ",
+      "Number": 91
+    },
+    {
+      "RevelationOrder": 4087,
+      "TurkishTranslation": "O, görülmeyeni de, görüleni de bilir. Koştukları ortaklardan yücedir.",
+      "ArabicText": "عَٰلِمِ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ فَتَعَٰلَىٰ عَمَّا يُشْرِكُونَ",
+      "Number": 92
+    },
+    {
+      "RevelationOrder": 4088,
+      "TurkishTranslation": "De ki: \"Rabbim! Onların tehdit olundukları şeyi bana mutlaka göstereceksen, o zaman beni zalim milletin içinde bulundurma Yarabbi.\"",
+      "ArabicText": "قُل رَّبِّ إِمَّا تُرِيَنِّى مَا يُوعَدُونَ",
+      "Number": 93
+    },
+    {
+      "RevelationOrder": 4089,
+      "TurkishTranslation": "De ki: \"Rabbim! Onların tehdit olundukları şeyi bana mutlaka göstereceksen, o zaman beni zalim milletin içinde bulundurma Yarabbi.\"",
+      "ArabicText": "رَبِّ فَلَا تَجْعَلْنِى فِى ٱلْقَوْمِ ٱلظَّٰلِمِينَ",
+      "Number": 94
+    },
+    {
+      "RevelationOrder": 4090,
+      "TurkishTranslation": "Biz onlara vadettiğimizi sana elbette gösterebiliriz.",
+      "ArabicText": "وَإِنَّا عَلَىٰٓ أَن نُّرِيَكَ مَا نَعِدُهُمْ لَقَٰدِرُونَ",
+      "Number": 95
+    },
+    {
+      "RevelationOrder": 4091,
+      "TurkishTranslation": "Kötülüğü en iyi ile sav. Onların vasıflandırmalarını Biz daha iyi biliriz.",
+      "ArabicText": "ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ ٱلسَّيِّئَةَ ۚ نَحْنُ أَعْلَمُ بِمَا يَصِفُونَ",
+      "Number": 96
+    },
+    {
+      "RevelationOrder": 4092,
+      "TurkishTranslation": "De ki: \"Rabbim! Şeytanların kışkırtmalarından Sana sığınırım.\"",
+      "ArabicText": "وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ",
+      "Number": 97
+    },
+    {
+      "RevelationOrder": 4093,
+      "TurkishTranslation": "\"Rabbim! Yanımda bulunmalarından da Sana sığınırım.\"",
+      "ArabicText": "وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+      "Number": 98
+    },
+    {
+      "RevelationOrder": 4094,
+      "TurkishTranslation": "Onlardan birine ölüm gelince: \"Rabbim! Beni geri çevir, belki, yapmadan bıraktığımı tamamlar, iyi iş işlerim\" der. Hayır; bu söylediği sadece kendi lafıdır. Tekrar diriltilecekleri güne kadar arkalarında geriye dönmekten onları alıkoyan bir engel vardır.",
+      "ArabicText": "حَتَّىٰٓ إِذَا جَآءَ أَحَدَهُمُ ٱلْمَوْتُ قَالَ رَبِّ ٱرْجِعُونِ",
+      "Number": 99
+    },
+    {
+      "RevelationOrder": 4095,
+      "TurkishTranslation": "Onlardan birine ölüm gelince: \"Rabbim! Beni geri çevir, belki, yapmadan bıraktığımı tamamlar, iyi iş işlerim\" der. Hayır; bu söylediği sadece kendi lafıdır. Tekrar diriltilecekleri güne kadar arkalarında geriye dönmekten onları alıkoyan bir engel vardır.",
+      "ArabicText": "لَعَلِّىٓ أَعْمَلُ صَٰلِحًۭا فِيمَا تَرَكْتُ ۚ كَلَّآ ۚ إِنَّهَا كَلِمَةٌ هُوَ قَآئِلُهَا ۖ وَمِن وَرَآئِهِم بَرْزَخٌ إِلَىٰ يَوْمِ يُبْعَثُونَ",
+      "Number": 100
+    },
+    {
+      "RevelationOrder": 4096,
+      "TurkishTranslation": "Sura üflendiği zaman, o gün, aralarındaki soy yakınlığı fayda vermez ve birbirlerine de birşey soramazlar.",
+      "ArabicText": "فَإِذَا نُفِخَ فِى ٱلصُّورِ فَلَآ أَنسَابَ بَيْنَهُمْ يَوْمَئِذٍۢ وَلَا يَتَسَآءَلُونَ",
+      "Number": 101
+    },
+    {
+      "RevelationOrder": 4097,
+      "TurkishTranslation": "Tartıları ağır gelenler, işte onlar kurtuluşa ermiş olanlardır.",
+      "ArabicText": "فَمَن ثَقُلَتْ مَوَٰزِينُهُۥ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ",
+      "Number": 102
+    },
+    {
+      "RevelationOrder": 4098,
+      "TurkishTranslation": "Tartıları hafif gelenler, işte onlar, kendilerine yazık edendir, cehennemde temellidirler.",
+      "ArabicText": "وَمَنْ خَفَّتْ مَوَٰزِينُهُۥ فَأُو۟لَٰٓئِكَ ٱلَّذِينَ خَسِرُوٓا۟ أَنفُسَهُمْ فِى جَهَنَّمَ خَٰلِدُونَ",
+      "Number": 103
+    },
+    {
+      "RevelationOrder": 4099,
+      "TurkishTranslation": "Ateş onların yüzlerini yalar, dişleri sırıtıp kalır.",
+      "ArabicText": "تَلْفَحُ وُجُوهَهُمُ ٱلنَّارُ وَهُمْ فِيهَا كَٰلِحُونَ",
+      "Number": 104
+    },
+    {
+      "RevelationOrder": 4100,
+      "TurkishTranslation": "Allah: \"Ayetlerim size okunurken onları yalanlıyordunuz değil mi?\" der.",
+      "ArabicText": "أَلَمْ تَكُنْ ءَايَٰتِى تُتْلَىٰ عَلَيْكُمْ فَكُنتُم بِهَا تُكَذِّبُونَ",
+      "Number": 105
+    },
+    {
+      "RevelationOrder": 4101,
+      "TurkishTranslation": "Şöyle derler: \"Rabbimiz! Bizi bedbahtlığımız yenmişti; sapık bir millet olmuştuk.\"",
+      "ArabicText": "قَالُوا۟ رَبَّنَا غَلَبَتْ عَلَيْنَا شِقْوَتُنَا وَكُنَّا قَوْمًۭا ضَآلِّينَ",
+      "Number": 106
+    },
+    {
+      "RevelationOrder": 4102,
+      "TurkishTranslation": "\"Rabbimiz! Bizi buradan çıkar, tekrar günaha dönersek, doğrusu zulmetmiş oluruz.\"",
+      "ArabicText": "رَبَّنَآ أَخْرِجْنَا مِنْهَا فَإِنْ عُدْنَا فَإِنَّا ظَٰلِمُونَ",
+      "Number": 107
+    },
+    {
+      "RevelationOrder": 4103,
+      "TurkishTranslation": "Allah: \"Sinin orada! Benimle konuşmayın. Kullarımdan bir topluluk: \"Rabbimiz! inandık, artık bizi bağışla, bize acı. Sen acıyanların en iyisisin\" diyordu. Siz ise, onları alaya alıyordunuz. Bu yaptıklarınız size Beni anmayı unutturuyordu. Onlara hep gülüyordunuz. Sabretmelerine karşılık bugün onları mükafatlandırdım. Doğrusu onlar kurtulanlardır\" der.",
+      "ArabicText": "قَالَ ٱخْسَـُٔوا۟ فِيهَا وَلَا تُكَلِّمُونِ",
+      "Number": 108
+    },
+    {
+      "RevelationOrder": 4104,
+      "TurkishTranslation": "Allah: \"Sinin orada! Benimle konuşmayın. Kullarımdan bir topluluk: \"Rabbimiz! inandık, artık bizi bağışla, bize acı. Sen acıyanların en iyisisin\" diyordu. Siz ise, onları alaya alıyordunuz. Bu yaptıklarınız size Beni anmayı unutturuyordu. Onlara hep gülüyordunuz. Sabretmelerine karşılık bugün onları mükafatlandırdım. Doğrusu onlar kurtulanlardır\" der.",
+      "ArabicText": "إِنَّهُۥ كَانَ فَرِيقٌۭ مِّنْ عِبَادِى يَقُولُونَ رَبَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا وَٱرْحَمْنَا وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+      "Number": 109
+    },
+    {
+      "RevelationOrder": 4105,
+      "TurkishTranslation": "Allah: \"Sinin orada! Benimle konuşmayın. Kullarımdan bir topluluk: \"Rabbimiz! inandık, artık bizi bağışla, bize acı. Sen acıyanların en iyisisin\" diyordu. Siz ise, onları alaya alıyordunuz. Bu yaptıklarınız size Beni anmayı unutturuyordu. Onlara hep gülüyordunuz. Sabretmelerine karşılık bugün onları mükafatlandırdım. Doğrusu onlar kurtulanlardır\" der.",
+      "ArabicText": "فَٱتَّخَذْتُمُوهُمْ سِخْرِيًّا حَتَّىٰٓ أَنسَوْكُمْ ذِكْرِى وَكُنتُم مِّنْهُمْ تَضْحَكُونَ",
+      "Number": 110
+    },
+    {
+      "RevelationOrder": 4106,
+      "TurkishTranslation": "Allah: \"Sinin orada! Benimle konuşmayın. Kullarımdan bir topluluk: \"Rabbimiz! inandık, artık bizi bağışla, bize acı. Sen acıyanların en iyisisin\" diyordu. Siz ise, onları alaya alıyordunuz. Bu yaptıklarınız size Beni anmayı unutturuyordu. Onlara hep gülüyordunuz. Sabretmelerine karşılık bugün onları mükafatlandırdım. Doğrusu onlar kurtulanlardır\" der.",
+      "ArabicText": "إِنِّى جَزَيْتُهُمُ ٱلْيَوْمَ بِمَا صَبَرُوٓا۟ أَنَّهُمْ هُمُ ٱلْفَآئِزُونَ",
+      "Number": 111
+    },
+    {
+      "RevelationOrder": 4107,
+      "TurkishTranslation": "Allah onlara yine: \"Yeryüzünde kaç yıl kaldınız\" der.",
+      "ArabicText": "قَٰلَ كَمْ لَبِثْتُمْ فِى ٱلْأَرْضِ عَدَدَ سِنِينَ",
+      "Number": 112
+    },
+    {
+      "RevelationOrder": 4108,
+      "TurkishTranslation": "\"Bir gün veya daha az bir süre kaldık, sayanlara sor\" derler.",
+      "ArabicText": "قَالُوا۟ لَبِثْنَا يَوْمًا أَوْ بَعْضَ يَوْمٍۢ فَسْـَٔلِ ٱلْعَآدِّينَ",
+      "Number": 113
+    },
+    {
+      "RevelationOrder": 4109,
+      "TurkishTranslation": "Allah' \"Pek az kaldınız, keşke bilseydiniz! Sizi boşuna yarattığımızı ve Bize döndürülmeyeceğinizi mi sandınız?\" der.",
+      "ArabicText": "قَٰلَ إِن لَّبِثْتُمْ إِلَّا قَلِيلًۭا ۖ لَّوْ أَنَّكُمْ كُنتُمْ تَعْلَمُونَ",
+      "Number": 114
+    },
+    {
+      "RevelationOrder": 4110,
+      "TurkishTranslation": "Allah' \"Pek az kaldınız, keşke bilseydiniz! Sizi boşuna yarattığımızı ve Bize döndürülmeyeceğinizi mi sandınız?\" der.",
+      "ArabicText": "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَٰكُمْ عَبَثًۭا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
+      "Number": 115
+    },
+    {
+      "RevelationOrder": 4111,
+      "TurkishTranslation": "Gerçek hükümdar olan Allah yücedir. O'ndan başka tanrı yoktur. O, yüce arşın Rabbidir.",
+      "ArabicText": "فَتَعَٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ",
+      "Number": 116
+    },
+    {
+      "RevelationOrder": 4112,
+      "TurkishTranslation": "Allah'la beraber, varlığına hiçbir delili olmadığı halde başka tanrıya tapanın hesabını Rabbi görecektir. İnkarcılar elbette kurtulamazlar.",
+      "ArabicText": "وَمَن يَدْعُ مَعَ ٱللَّهِ إِلَٰهًا ءَاخَرَ لَا بُرْهَٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓ ۚ إِنَّهُۥ لَا يُفْلِحُ ٱلْكَٰفِرُونَ",
+      "Number": 117
+    },
+    {
+      "RevelationOrder": 4113,
+      "TurkishTranslation": "De ki: \"Rabbim! Bağışla, merhamet et, Sen merhamet edenlerin en hayırlısısın.\"",
+      "ArabicText": "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+      "Number": 118
+    }
+  ],
+  "SurahName": "سُورَةُ المُؤۡمِنُونَ"
+}

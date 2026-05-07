@@ -1,0 +1,128 @@
+{
+  "SurahEnglishName": "Al-Balad",
+  "SurahNumber": 90,
+  "RevelationOrder": 35,
+  "Verses": [
+    {
+      "RevelationOrder": 649,
+      "TurkishTranslation": "Bu şehre (Mekke'ye) yemin ederim; ki sen bu şehirde oturmuşsun.",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 650,
+      "TurkishTranslation": "Bu şehre (Mekke'ye) yemin ederim; ki sen bu şehirde oturmuşsun.",
+      "ArabicText": "وَأَنتَ حِلٌّۢ بِهَٰذَا ٱلْبَلَدِ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 651,
+      "TurkishTranslation": "Doğurana ve doğurduğuna and olsun ki;",
+      "ArabicText": "وَوَالِدٍۢ وَمَا وَلَدَ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 652,
+      "TurkishTranslation": "İnsanoğlunu, zorluklara katlanacak şekilde yarattık.",
+      "ArabicText": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 653,
+      "TurkishTranslation": "İnsanoğlu, kendisine kimsenin güç yetiremeyeceğini mi sanıyor?",
+      "ArabicText": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌۭ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 654,
+      "TurkishTranslation": "\"Yığın yığın mal tüketmişimdir\" diyor.",
+      "ArabicText": "يَقُولُ أَهْلَكْتُ مَالًۭا لُّبَدًا",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 655,
+      "TurkishTranslation": "O, kimsenin kendisini görmediğini mi zannediyor?",
+      "ArabicText": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+      "Number": 7
+    },
+    {
+      "RevelationOrder": 656,
+      "TurkishTranslation": "Biz onun için iki göz, bir dil ve iki dudak var etmedik mi?",
+      "ArabicText": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+      "Number": 8
+    },
+    {
+      "RevelationOrder": 657,
+      "TurkishTranslation": "Biz onun için iki göz, bir dil ve iki dudak var etmedik mi?",
+      "ArabicText": "وَلِسَانًۭا وَشَفَتَيْنِ",
+      "Number": 9
+    },
+    {
+      "RevelationOrder": 658,
+      "TurkishTranslation": "Biz ona eğri ve doğru iki yolu da göstermedik mi?",
+      "ArabicText": "وَهَدَيْنَٰهُ ٱلنَّجْدَيْنِ",
+      "Number": 10
+    },
+    {
+      "RevelationOrder": 659,
+      "TurkishTranslation": "Ama o, zor geçidi aşmaya girişemedi.",
+      "ArabicText": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+      "Number": 11
+    },
+    {
+      "RevelationOrder": 660,
+      "TurkishTranslation": "O zor geçidin ne olduğunu sen bilir misin?",
+      "ArabicText": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+      "Number": 12
+    },
+    {
+      "RevelationOrder": 661,
+      "TurkishTranslation": "O geçit, bir köle ve esir azadetmek,",
+      "ArabicText": "فَكُّ رَقَبَةٍ",
+      "Number": 13
+    },
+    {
+      "RevelationOrder": 662,
+      "TurkishTranslation": "Yahut, açlık gününde, yakını olan bir öksüzü, yahut toprağa serilmiş bir yoksulu doyurmaktır.",
+      "ArabicText": "أَوْ إِطْعَٰمٌۭ فِى يَوْمٍۢ ذِى مَسْغَبَةٍۢ",
+      "Number": 14
+    },
+    {
+      "RevelationOrder": 663,
+      "TurkishTranslation": "Yahut, açlık gününde, yakını olan bir öksüzü, yahut toprağa serilmiş bir yoksulu doyurmaktır.",
+      "ArabicText": "يَتِيمًۭا ذَا مَقْرَبَةٍ",
+      "Number": 15
+    },
+    {
+      "RevelationOrder": 664,
+      "TurkishTranslation": "Yahut, açlık gününde, yakını olan bir öksüzü, yahut toprağa serilmiş bir yoksulu doyurmaktır.",
+      "ArabicText": "أَوْ مِسْكِينًۭا ذَا مَتْرَبَةٍۢ",
+      "Number": 16
+    },
+    {
+      "RevelationOrder": 665,
+      "TurkishTranslation": "Sonra, inanıp birbirlerine sabır tavsiye edenlerden, merhametlilerden olmayı tavsiye edenlerden olmaktır.",
+      "ArabicText": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+      "Number": 17
+    },
+    {
+      "RevelationOrder": 666,
+      "TurkishTranslation": "İşte bunlar amel defterleri sağdan verilenlerdir.",
+      "ArabicText": "أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْمَيْمَنَةِ",
+      "Number": 18
+    },
+    {
+      "RevelationOrder": 667,
+      "TurkishTranslation": "Ayetlerimizi inkar edenler, işte onlar amel defterleri sollarından verilenlerdir.",
+      "ArabicText": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا هُمْ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ",
+      "Number": 19
+    },
+    {
+      "RevelationOrder": 668,
+      "TurkishTranslation": "Onlar her yönden ateşle kapatılacaklardır.",
+      "ArabicText": "عَلَيْهِمْ نَارٌۭ مُّؤْصَدَةٌۢ",
+      "Number": 20
+    }
+  ],
+  "SurahName": "سُورَةُ البَلَدِ"
+}

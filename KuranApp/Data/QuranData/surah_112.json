@@ -1,0 +1,32 @@
+{
+  "SurahEnglishName": "Al-Ikhlaas",
+  "SurahNumber": 112,
+  "RevelationOrder": 22,
+  "Verses": [
+    {
+      "RevelationOrder": 332,
+      "TurkishTranslation": "De ki: O Allah bir tektir.",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 333,
+      "TurkishTranslation": "Allah her şeyden müstağni ve her şey O'na muhtaçtır.",
+      "ArabicText": "ٱللَّهُ ٱلصَّمَدُ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 334,
+      "TurkishTranslation": "O doğurmamış ve doğmamıştır.",
+      "ArabicText": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 335,
+      "TurkishTranslation": "Hiçbir şey O'na denk değildir.",
+      "ArabicText": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "Number": 4
+    }
+  ],
+  "SurahName": "سُورَةُ الإِخۡلَاصِ"
+}

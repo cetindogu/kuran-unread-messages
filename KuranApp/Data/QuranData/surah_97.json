@@ -1,0 +1,38 @@
+{
+  "SurahEnglishName": "Al-Qadr",
+  "SurahNumber": 97,
+  "RevelationOrder": 25,
+  "Verses": [
+    {
+      "RevelationOrder": 440,
+      "TurkishTranslation": "Doğrusu, Biz, Kuran'ı kadir gecesinde indirmişizdir.",
+      "ArabicText": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 441,
+      "TurkishTranslation": "Kadir gecesinin ne olduğunu sen bilir misin?",
+      "ArabicText": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 442,
+      "TurkishTranslation": "Kadir gecesi bin aydan hayırlıdır.",
+      "ArabicText": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 443,
+      "TurkishTranslation": "Melekler ve Cebrail o gecede Rablerinin izniyle her türlü iş için inerler.",
+      "ArabicText": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 444,
+      "TurkishTranslation": "O gece, tan yerinin ağarmasına kadar bir esenliktir.",
+      "ArabicText": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "Number": 5
+    }
+  ],
+  "SurahName": "سُورَةُ القَدۡرِ"
+}

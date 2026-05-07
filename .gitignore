@@ -6,7 +6,3 @@
 *.sln.docstates
 .vs/
 .vscode/
-kuran.db
-*.json
-!appsettings.json
-!appsettings.Development.json

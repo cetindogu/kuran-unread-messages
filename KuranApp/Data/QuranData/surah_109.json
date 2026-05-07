@@ -1,0 +1,44 @@
+{
+  "SurahEnglishName": "Al-Kaafiroon",
+  "SurahNumber": 109,
+  "RevelationOrder": 18,
+  "Verses": [
+    {
+      "RevelationOrder": 310,
+      "TurkishTranslation": "De ki: \"Ey inkarcılar!\"",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 311,
+      "TurkishTranslation": "\"Ben sizin taptıklarınıza tapmam.\"",
+      "ArabicText": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 312,
+      "TurkishTranslation": "\"Benim taptığıma da sizler tapmazsınız.\"",
+      "ArabicText": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 313,
+      "TurkishTranslation": "\"Ben de sizin taptığınıza tapacak değilim.\"",
+      "ArabicText": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 314,
+      "TurkishTranslation": "\"Benim taptığıma da sizler tapmıyorsunuz.\"",
+      "ArabicText": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 315,
+      "TurkishTranslation": "\"Sizin dininiz size, benim dinim banadır.\"",
+      "ArabicText": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+      "Number": 6
+    }
+  ],
+  "SurahName": "سُورَةُ الكَافِرُونَ"
+}

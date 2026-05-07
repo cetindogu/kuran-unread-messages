@@ -1,0 +1,26 @@
+{
+  "SurahEnglishName": "Al-Kawthar",
+  "SurahNumber": 108,
+  "RevelationOrder": 15,
+  "Verses": [
+    {
+      "RevelationOrder": 292,
+      "TurkishTranslation": "Doğrusu sana pek çok nimet vermişizdir.",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 293,
+      "TurkishTranslation": "Öyleyse Rabbin için namaz kıl, kurban kes.",
+      "ArabicText": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 294,
+      "TurkishTranslation": "Doğrusu adı sanı ortadan kalkacak olan, sana kin tutan kimsedir.",
+      "ArabicText": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "Number": 3
+    }
+  ],
+  "SurahName": "سُورَةُ الكَوۡثَرِ"
+}

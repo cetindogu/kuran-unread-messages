@@ -1,0 +1,248 @@
+{
+  "SurahEnglishName": "Al-Qiyaama",
+  "SurahNumber": 75,
+  "RevelationOrder": 31,
+  "Verses": [
+    {
+      "RevelationOrder": 505,
+      "TurkishTranslation": "Kıyamet gününe yemin ederim.",
+      "ArabicText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَٰمَةِ",
+      "Number": 1
+    },
+    {
+      "RevelationOrder": 506,
+      "TurkishTranslation": "Ve nedamet çeken nefse yemin ederim.",
+      "ArabicText": "وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ",
+      "Number": 2
+    },
+    {
+      "RevelationOrder": 507,
+      "TurkishTranslation": "İnsan, kemiklerini bir araya toplayamayız mı sanıyor?",
+      "ArabicText": "أَيَحْسَبُ ٱلْإِنسَٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
+      "Number": 3
+    },
+    {
+      "RevelationOrder": 508,
+      "TurkishTranslation": "Evet, Biz onu, parmak uçlarına varıncaya kadar bütün incelikleriyle yeniden yapmaya kadiriz.",
+      "ArabicText": "بَلَىٰ قَٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ",
+      "Number": 4
+    },
+    {
+      "RevelationOrder": 509,
+      "TurkishTranslation": "Ama, insanoğlu gelecekte de suç işlemek ister de: \"Kıyamet günü ne zamanmış! \" der.",
+      "ArabicText": "بَلْ يُرِيدُ ٱلْإِنسَٰنُ لِيَفْجُرَ أَمَامَهُۥ",
+      "Number": 5
+    },
+    {
+      "RevelationOrder": 510,
+      "TurkishTranslation": "Ama, insanoğlu gelecekte de suç işlemek ister de: \"Kıyamet günü ne zamanmış! \" der.",
+      "ArabicText": "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَٰمَةِ",
+      "Number": 6
+    },
+    {
+      "RevelationOrder": 511,
+      "TurkishTranslation": "Gözün kamaştığı, ayın tutulduğu, güneş ve ayın bir araya getirildiği zaman, işte o gün insan: \"kaçacak yer nerede?\" der.",
+      "ArabicText": "فَإِذَا بَرِقَ ٱلْبَصَرُ",
+      "Number": 7
+    },
+    {
+      "RevelationOrder": 512,
+      "TurkishTranslation": "Gözün kamaştığı, ayın tutulduğu, güneş ve ayın bir araya getirildiği zaman, işte o gün insan: \"kaçacak yer nerede?\" der.",
+      "ArabicText": "وَخَسَفَ ٱلْقَمَرُ",
+      "Number": 8
+    },
+    {
+      "RevelationOrder": 513,
+      "TurkishTranslation": "Gözün kamaştığı, ayın tutulduğu, güneş ve ayın bir araya getirildiği zaman, işte o gün insan: \"kaçacak yer nerede?\" der.",
+      "ArabicText": "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ",
+      "Number": 9
+    },
+    {
+      "RevelationOrder": 514,
+      "TurkishTranslation": "Gözün kamaştığı, ayın tutulduğu, güneş ve ayın bir araya getirildiği zaman, işte o gün insan: \"kaçacak yer nerede?\" der.",
+      "ArabicText": "يَقُولُ ٱلْإِنسَٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
+      "Number": 10
+    },
+    {
+      "RevelationOrder": 515,
+      "TurkishTranslation": "Hayır; hayır; bir sığınak yoktur.",
+      "ArabicText": "كَلَّا لَا وَزَرَ",
+      "Number": 11
+    },
+    {
+      "RevelationOrder": 516,
+      "TurkishTranslation": "O gün, sen, Rabbinin huzuruna varıp durursun.",
+      "ArabicText": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ",
+      "Number": 12
+    },
+    {
+      "RevelationOrder": 517,
+      "TurkishTranslation": "O gün, insanoğluna önde ve sonda yaptığı ne varsa bildirilir.",
+      "ArabicText": "يُنَبَّؤُا۟ ٱلْإِنسَٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
+      "Number": 13
+    },
+    {
+      "RevelationOrder": 518,
+      "TurkishTranslation": "Özürlerini sayıp dökse de, insanoğlu, artık kendi kendinin şahididir.",
+      "ArabicText": "بَلِ ٱلْإِنسَٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌۭ",
+      "Number": 14
+    },
+    {
+      "RevelationOrder": 519,
+      "TurkishTranslation": "Özürlerini sayıp dökse de, insanoğlu, artık kendi kendinin şahididir.",
+      "ArabicText": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ",
+      "Number": 15
+    },
+    {
+      "RevelationOrder": 520,
+      "TurkishTranslation": "Cebrail sana Kuran okurken, unutmamak için acele edip onunla beraber söyleme, yalnız dinle.",
+      "ArabicText": "لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ",
+      "Number": 16
+    },
+    {
+      "RevelationOrder": 521,
+      "TurkishTranslation": "Doğrusu o vahyolunanı kalbine yerleştirmek ve onu sana okutturmak Bize düşer.",
+      "ArabicText": "إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ",
+      "Number": 17
+    },
+    {
+      "RevelationOrder": 522,
+      "TurkishTranslation": "Biz onu Cebrail'e okuttuğumuz zaman, onun okumasını dinle.",
+      "ArabicText": "فَإِذَا قَرَأْنَٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
+      "Number": 18
+    },
+    {
+      "RevelationOrder": 523,
+      "TurkishTranslation": "Sonra onu sana açıklamak Bize düşer.",
+      "ArabicText": "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ",
+      "Number": 19
+    },
+    {
+      "RevelationOrder": 524,
+      "TurkishTranslation": "Hayır, hayır! Sizler, çabuk elde edeceğiniz dünya nimetlerini seversiniz.",
+      "ArabicText": "كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ",
+      "Number": 20
+    },
+    {
+      "RevelationOrder": 525,
+      "TurkishTranslation": "Ahireti bırakırsınız.",
+      "ArabicText": "وَتَذَرُونَ ٱلْءَاخِرَةَ",
+      "Number": 21
+    },
+    {
+      "RevelationOrder": 526,
+      "TurkishTranslation": "O gün bir takım yüzler Rablerine bakıp parlayacaktır.",
+      "ArabicText": "وُجُوهٌۭ يَوْمَئِذٍۢ نَّاضِرَةٌ",
+      "Number": 22
+    },
+    {
+      "RevelationOrder": 527,
+      "TurkishTranslation": "O gün bir takım yüzler Rablerine bakıp parlayacaktır.",
+      "ArabicText": "إِلَىٰ رَبِّهَا نَاظِرَةٌۭ",
+      "Number": 23
+    },
+    {
+      "RevelationOrder": 528,
+      "TurkishTranslation": "O gün bir takım yüzler de asıktır.",
+      "ArabicText": "وَوُجُوهٌۭ يَوْمَئِذٍۭ بَاسِرَةٌۭ",
+      "Number": 24
+    },
+    {
+      "RevelationOrder": 529,
+      "TurkishTranslation": "Kendisinin belkemiğinin kırılacağını sanır.",
+      "ArabicText": "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌۭ",
+      "Number": 25
+    },
+    {
+      "RevelationOrder": 530,
+      "TurkishTranslation": "Dikkat edin; can boğaza gelip köprücük kemiklerine dayandığı zaman: \"Çare bulan yok mudur?\" denir.",
+      "ArabicText": "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ",
+      "Number": 26
+    },
+    {
+      "RevelationOrder": 531,
+      "TurkishTranslation": "Dikkat edin; can boğaza gelip köprücük kemiklerine dayandığı zaman: \"Çare bulan yok mudur?\" denir.",
+      "ArabicText": "وَقِيلَ مَنْ ۜ رَاقٍۢ",
+      "Number": 27
+    },
+    {
+      "RevelationOrder": 532,
+      "TurkishTranslation": "Artık ayrılık vaktinin geldiğini sanır.",
+      "ArabicText": "وَظَنَّ أَنَّهُ ٱلْفِرَاقُ",
+      "Number": 28
+    },
+    {
+      "RevelationOrder": 533,
+      "TurkishTranslation": "Bacaklar birbirine dolaşır.",
+      "ArabicText": "وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
+      "Number": 29
+    },
+    {
+      "RevelationOrder": 534,
+      "TurkishTranslation": "O gün sevk Rabbin huzurunadır.",
+      "ArabicText": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ",
+      "Number": 30
+    },
+    {
+      "RevelationOrder": 535,
+      "TurkishTranslation": "O, Peygamberi doğrulamamış, namaz kılmamış, ama yalanlayıp yüz çevirmiş, sonra da salına salına kendinden yana olanlara gitmişti.",
+      "ArabicText": "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
+      "Number": 31
+    },
+    {
+      "RevelationOrder": 536,
+      "TurkishTranslation": "O, Peygamberi doğrulamamış, namaz kılmamış, ama yalanlayıp yüz çevirmiş, sonra da salına salına kendinden yana olanlara gitmişti.",
+      "ArabicText": "وَلَٰكِن كَذَّبَ وَتَوَلَّىٰ",
+      "Number": 32
+    },
+    {
+      "RevelationOrder": 537,
+      "TurkishTranslation": "O, Peygamberi doğrulamamış, namaz kılmamış, ama yalanlayıp yüz çevirmiş, sonra da salına salına kendinden yana olanlara gitmişti.",
+      "ArabicText": "ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ",
+      "Number": 33
+    },
+    {
+      "RevelationOrder": 538,
+      "TurkishTranslation": "Sana yazıklar olsun, yazıklar!",
+      "ArabicText": "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+      "Number": 34
+    },
+    {
+      "RevelationOrder": 539,
+      "TurkishTranslation": "Daha ne olsun, sana yazıklar olsun, yazıklar!",
+      "ArabicText": "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ",
+      "Number": 35
+    },
+    {
+      "RevelationOrder": 540,
+      "TurkishTranslation": "İnsanoğlu kendisinin başıboş bırakılacağını mı sanır?",
+      "ArabicText": "أَيَحْسَبُ ٱلْإِنسَٰنُ أَن يُتْرَكَ سُدًى",
+      "Number": 36
+    },
+    {
+      "RevelationOrder": 541,
+      "TurkishTranslation": "O, katılan bir meni damlası değil miydi?",
+      "ArabicText": "أَلَمْ يَكُ نُطْفَةًۭ مِّن مَّنِىٍّۢ يُمْنَىٰ",
+      "Number": 37
+    },
+    {
+      "RevelationOrder": 542,
+      "TurkishTranslation": "Sonra kan pıhtısı olmuş, sonra Allah onu yaratıp şekil vermişti.",
+      "ArabicText": "ثُمَّ كَانَ عَلَقَةًۭ فَخَلَقَ فَسَوَّىٰ",
+      "Number": 38
+    },
+    {
+      "RevelationOrder": 543,
+      "TurkishTranslation": "Ondan, erkek, dişi iki cins yaratmıştı.",
+      "ArabicText": "فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
+      "Number": 39
+    },
+    {
+      "RevelationOrder": 544,
+      "TurkishTranslation": "Bunları yapan Allah'ın ölüleri diriltmeye gücü yetmez mi? Elbette yeter.",
+      "ArabicText": "أَلَيْسَ ذَٰلِكَ بِقَٰدِرٍ عَلَىٰٓ أَن يُحْۦِىَ ٱلْمَوْتَىٰ",
+      "Number": 40
+    }
+  ],
+  "SurahName": "سُورَةُ القِيَامَةِ"
+}
