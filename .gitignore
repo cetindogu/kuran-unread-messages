@@ -10,4 +10,3 @@ kuran.db
 *.json
 !appsettings.json
 !appsettings.Development.json
-# Data/QuranData/*.json
