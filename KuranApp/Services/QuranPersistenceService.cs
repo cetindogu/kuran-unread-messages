@@ -42,7 +42,7 @@ namespace KuranApp.Services
             }
         }
 
-        public async Task<string?> GenerateInterpretationAsync(Verse verse, LLMModelInfo modelInfo)
+        public async Task<string?> GenerateInterpretationAsync(Verse verse, LLMModelInfo modelInfo, string promptKey = "default")
         {
             if (string.IsNullOrEmpty(modelInfo.ApiKey) && modelInfo.ProviderName.ToLower() != "lmstudio")
             {
@@ -53,11 +53,11 @@ namespace KuranApp.Services
             {
                 return modelInfo.ProviderName.ToLower() switch
                 {
-                    "groq" => await CallGroqAPI(verse, modelInfo),
-                    "openrouter" => await CallOpenRouterAPI(verse, modelInfo),
-                    "together ai" => await CallTogetherAIAPI(verse, modelInfo),
-                    "google gemini" => await CallGeminiAPI(verse, modelInfo),
-                    "lmstudio" => await CallLMStudioAPI(verse, modelInfo),
+                    "groq" => await CallGroqAPI(verse, modelInfo, promptKey),
+                    "openrouter" => await CallOpenRouterAPI(verse, modelInfo, promptKey),
+                    "together ai" => await CallTogetherAIAPI(verse, modelInfo, promptKey),
+                    "google gemini" => await CallGeminiAPI(verse, modelInfo, promptKey),
+                    "lmstudio" => await CallLMStudioAPI(verse, modelInfo, promptKey),
                     _ => null
                 };
             }
@@ -68,23 +68,24 @@ namespace KuranApp.Services
             }
         }
 
-        private async Task<string?> CallGroqAPI(Verse verse, LLMModelInfo modelInfo)
+        private async Task<string?> CallGroqAPI(Verse verse, LLMModelInfo modelInfo, string promptKey)
         {
-            var prompt = BuildInterpretationPrompt(verse);
+            var prompt = BuildInterpretationPrompt(verse, promptKey);
 
             var requestBody = new
             {
                 model = modelInfo.ModelName,
                 messages = new[]
                 {
-                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimisin. Kuran ayetlerini doğru, faydalı ve eğitici şekilde yorumluyorsun." },
+                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimi, tarihçi ve dil bilimcisin. Kuran ayetlerini derinlemesine, akademik ve manevi bir perspektifle yorumluyorsun." },
                     new { role = "user", content = prompt }
                 },
                 temperature = 0.7,
-                max_tokens = 500
+                max_tokens = 2000
             };
 
             using var client = new HttpClient();
+            client.Timeout = TimeSpan.FromSeconds(3600);
             client.DefaultRequestHeaders.Add("Authorization", $"Bearer {modelInfo.ApiKey}");
 
             var content = new StringContent(JsonSerializer.Serialize(requestBody), System.Text.Encoding.UTF8, "application/json");
@@ -105,20 +106,20 @@ namespace KuranApp.Services
             return null;
         }
 
-        private async Task<string?> CallOpenRouterAPI(Verse verse, LLMModelInfo modelInfo)
+        private async Task<string?> CallOpenRouterAPI(Verse verse, LLMModelInfo modelInfo, string promptKey)
         {
-            var prompt = BuildInterpretationPrompt(verse);
+            var prompt = BuildInterpretationPrompt(verse, promptKey);
 
             var requestBody = new
             {
                 model = modelInfo.ModelName,
                 messages = new[]
                 {
-                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimisin. Kuran ayetlerini doğru, faydalı ve eğitici şekilde yorumluyorsun." },
+                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimi, tarihçi ve dil bilimcisin. Kuran ayetlerini derinlemesine, akademik ve manevi bir perspektifle yorumluyorsun." },
                     new { role = "user", content = prompt }
                 },
                 temperature = 0.7,
-                max_tokens = 500
+                max_tokens = 2000
             };
 
             using var client = new HttpClient();
@@ -142,20 +143,20 @@ namespace KuranApp.Services
             return null;
         }
 
-        private async Task<string?> CallTogetherAIAPI(Verse verse, LLMModelInfo modelInfo)
+        private async Task<string?> CallTogetherAIAPI(Verse verse, LLMModelInfo modelInfo, string promptKey)
         {
-            var prompt = BuildInterpretationPrompt(verse);
+            var prompt = BuildInterpretationPrompt(verse, promptKey);
 
             var requestBody = new
             {
                 model = modelInfo.ModelName,
                 messages = new[]
                 {
-                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimisin. Kuran ayetlerini doğru, faydalı ve eğitici şekilde yorumluyorsun." },
+                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimi, tarihçi ve dil bilimcisin. Kuran ayetlerini derinlemesine, akademik ve manevi bir perspektifle yorumluyorsun." },
                     new { role = "user", content = prompt }
                 },
                 temperature = 0.7,
-                max_tokens = 500
+                max_tokens = 2000
             };
 
             using var client = new HttpClient();
@@ -179,9 +180,9 @@ namespace KuranApp.Services
             return null;
         }
 
-        private async Task<string?> CallGeminiAPI(Verse verse, LLMModelInfo modelInfo)
+        private async Task<string?> CallGeminiAPI(Verse verse, LLMModelInfo modelInfo, string promptKey)
         {
-            var prompt = BuildInterpretationPrompt(verse);
+            var prompt = BuildInterpretationPrompt(verse, promptKey);
 
             var requestBody = new
             {
@@ -195,7 +196,7 @@ namespace KuranApp.Services
                 generationConfig = new
                 {
                     temperature = 0.7,
-                    maxOutputTokens = 500
+                    maxOutputTokens = 2000
                 }
             };
 
@@ -222,9 +223,9 @@ namespace KuranApp.Services
             return null;
         }
 
-        private async Task<string?> CallLMStudioAPI(Verse verse, LLMModelInfo modelInfo)
+        private async Task<string?> CallLMStudioAPI(Verse verse, LLMModelInfo modelInfo, string promptKey)
         {
-            var prompt = BuildInterpretationPrompt(verse);
+            var prompt = BuildInterpretationPrompt(verse, promptKey);
             var baseUrl = modelInfo.BaseUrl ?? "http://127.0.0.1:1234/v1";
 
             var requestBody = new
@@ -232,11 +233,11 @@ namespace KuranApp.Services
                 model = modelInfo.ModelName,
                 messages = new[]
                 {
-                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimisin. Kuran ayetlerini doğru, faydalı ve eğitici şekilde yorumluyorsun." },
+                    new { role = "system", content = "Sen saygın ve bilgili bir İslam alimi, tarihçi ve dil bilimcisin. Kuran ayetlerini derinlemesine, akademik ve manevi bir perspektifle yorumluyorsun." },
                     new { role = "user", content = prompt }
                 },
                 temperature = 0.7,
-                max_tokens = 1000
+                max_tokens = 2000
             };
 
             using var client = new HttpClient();
@@ -266,17 +267,45 @@ namespace KuranApp.Services
             }
         }
 
-        private string BuildInterpretationPrompt(Verse verse)
+        private string BuildInterpretationPrompt(Verse verse, string promptKey)
         {
+            if (promptKey == "detailed")
+            {
+                return $@"Aşağıdaki Kuran ayetini detaylı bir şekilde analiz et:
+Arapça Metin: ""{verse.ArabicText}""
+Türkçe Meal: ""{verse.TurkishTranslation}""
+Bu ayeti tarafsız, nesnel, kısa ve net bir şekilde TÜRKÇE olarak yorumla.
+Anlam kaybı olmayacak şekilde mümkün olduğunca öz ve veciz bir anlatım kullan.
+Lütfen aşağıdaki başlıkları kullanarak, formatlı bir şekilde yanıt ver:
+
+### 1. Meal-Merkezli Kısa Açıklama
+Ayette tam olarak ne dendiğini, kelime anlamlarını da gözeterek 1-2 cümle ile açıkla.
+
+### 2. Yorum/Tefsir
+Ayetin derin anlamını, mesajını ve günümüze bakan yönlerini detaylıca açıkla.
+
+### 3. Hadis
+Bu ayetle ilgili veya bu ayetin mesajını destekleyen bilinen sahih hadislerden bahset.
+
+### 4. Tarih
+Ayetin indiği dönemin tarihi arka planı, o dönemdeki olaylar ve toplumsal yapı hakkında bilgi ver.
+
+### 5. Sebeb-i Nüzul
+Ayetin iniş sebebini (eğer biliniyorsa özel bir olay veya soru üzerine mi indi) açıkla.
+
+Yanıtın sadece bu başlıkları ve içeriklerini içermeli ve eğer başlık için bilgi kesin değilse 'bilinmemektedir' yaz, TÜRKÇE olmalı ve akademik/saygın bir dil kullanılmalıdır.";
+            }
+
+            // Default prompt (original)
             return $"Şu Kuran ayetinin Arapça metni: \"{verse.ArabicText}\" Türkçe meali: \"{verse.TurkishTranslation}\" " +
                    $"Bu ayeti tarafsız, nesnel, kısa ve net bir şekilde TÜRKÇE olarak yorumla. " +
                    $"Anlam kaybı olmayacak şekilde mümkün olduğunca öz ve veciz bir anlatım kullan. " +
                    $"Yanıtın sadece Türkçe ve yorum metni olmalıdır.";
         }
 
-        public void SaveInterpretationToFile(int surahNumber, int modelId, string content)
+        public void SaveInterpretationToFile(int surahNumber, int modelId, string content, string promptKey = "default")
         {
-            _db.SaveInterpretationToFile(surahNumber, modelId, content);
+            _db.SaveInterpretationToFile(surahNumber, modelId, content, promptKey);
         }
 
         private async Task ProcessSurahFileAsync(int surahNumber, string filePath)

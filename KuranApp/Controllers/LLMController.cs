@@ -111,7 +111,7 @@ namespace KuranApp.Controllers
         }
 
         [HttpPost("batch-interpret")]
-        public async Task<IActionResult> BatchInterpret([FromServices] QuranPersistenceService persistenceService, [FromQuery] int modelId, [FromQuery] int? surahId)
+        public async Task<IActionResult> BatchInterpret([FromServices] QuranPersistenceService persistenceService, [FromQuery] int modelId, [FromQuery] int? surahId, [FromQuery] string promptKey = "default")
         {
             var modelInfo = _db.GetLLMModel(modelId);
             if (modelInfo == null) return NotFound("Model not found.");
@@ -123,21 +123,21 @@ namespace KuranApp.Controllers
             int count = 0;
             foreach (var verse in verses)
             {
-                // Check if already interpreted by this model
-                var existing = _db.GetAIInterpretation(verse.Id, modelId);
+                // Check if already interpreted by this model and prompt
+                var existing = _db.GetAIInterpretation(verse.Id, modelId, promptKey);
                 if (existing != null) continue;
 
-                var result = await persistenceService.GenerateInterpretationAsync(verse, modelInfo);
+                var result = await persistenceService.GenerateInterpretationAsync(verse, modelInfo, promptKey);
                 if (result == null) continue;
 
-                _db.AddAIInterpretation(verse.Id, modelId, result);
+                _db.AddAIInterpretation(verse.Id, modelId, result, 0, promptKey);
                 
                 // Save to file as requested
-                persistenceService.SaveInterpretationToFile(verse.SurahId, modelId, result);
+                persistenceService.SaveInterpretationToFile(verse.SurahId, modelId, result, promptKey);
                 count++;
             }
 
-            return Ok(new { Message = $"Processed {count} verses.", Model = modelInfo.DisplayName });
+            return Ok(new { Message = $"Processed {count} verses.", Model = modelInfo.DisplayName, PromptKey = promptKey });
         }
     }
 

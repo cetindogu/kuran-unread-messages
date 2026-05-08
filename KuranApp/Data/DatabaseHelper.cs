@@ -93,17 +93,19 @@ namespace KuranApp.Data
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     VerseId INTEGER,
                     ModelId INTEGER,
+                    PromptKey TEXT DEFAULT 'default',
                     Interpretation TEXT,
                     GeneratedAt DATETIME,
                     CostTokens INTEGER DEFAULT 0,
                     FOREIGN KEY(VerseId) REFERENCES Verses(Id),
                     FOREIGN KEY(ModelId) REFERENCES LLMModels(Id),
-                    UNIQUE(VerseId, ModelId)
+                    UNIQUE(VerseId, ModelId, PromptKey)
                 );
                 CREATE TABLE IF NOT EXISTS InterpretationRequests (
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     VerseId INTEGER,
                     ModelId INTEGER,
+                    PromptKey TEXT DEFAULT 'default',
                     Status TEXT DEFAULT 'pending',
                     RequestedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
                     CompletedAt DATETIME,
@@ -129,11 +131,12 @@ namespace KuranApp.Data
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     SurahNumber INTEGER,
                     ModelId INTEGER,
+                    PromptKey TEXT DEFAULT 'default',
                     FilePath TEXT,
                     CreatedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY(SurahNumber) REFERENCES Surahs(SurahNumber),
                     FOREIGN KEY(ModelId) REFERENCES LLMModels(Id),
-                    UNIQUE(SurahNumber, ModelId)
+                    UNIQUE(SurahNumber, ModelId, PromptKey)
                 );";
             command.ExecuteNonQuery();
 
@@ -155,11 +158,33 @@ namespace KuranApp.Data
             }
             catch { /* Column already exists */ }
 
+            // Migration: Add PromptKey column to AIInterpretations if it doesn't exist
+            try
+            {
+                var alterCmd = connection.CreateCommand();
+                alterCmd.CommandText = "ALTER TABLE AIInterpretations ADD COLUMN PromptKey TEXT DEFAULT 'default';";
+                alterCmd.ExecuteNonQuery();
+            }
+            catch { /* Column already exists */ }
+
             // Migration: Add CostTokens column to AIInterpretations if it doesn't exist
             try
             {
                 var alterCmd = connection.CreateCommand();
                 alterCmd.CommandText = "ALTER TABLE AIInterpretations ADD COLUMN CostTokens INTEGER DEFAULT 0;";
+                alterCmd.ExecuteNonQuery();
+            }
+            catch { /* Column already exists */ }
+
+            // Migration: Update AIInterpretations Unique Constraint (SQLite doesn't support ALTER TABLE DROP CONSTRAINT easily)
+            // We'll just handle it by making sure new tables have the right constraint and old ones are updated if possible
+            // In SQLite, the most reliable way is to recreate the table, but for now we'll just add the column.
+            
+            // Migration: Add PromptKey to FileBackups
+            try
+            {
+                var alterCmd = connection.CreateCommand();
+                alterCmd.CommandText = "ALTER TABLE FileBackups ADD COLUMN PromptKey TEXT DEFAULT 'default';";
                 alterCmd.ExecuteNonQuery();
             }
             catch { /* Column already exists */ }
@@ -555,17 +580,18 @@ namespace KuranApp.Data
             return null;
         }
 
-        public void AddAIInterpretation(int verseId, int modelId, string interpretation, int costTokens = 0)
+        public void AddAIInterpretation(int verseId, int modelId, string interpretation, int costTokens = 0, string promptKey = "default")
         {
             using var connection = new SqliteConnection(_connectionString);
             connection.Open();
 
             var command = connection.CreateCommand();
             command.CommandText = @"
-                INSERT OR REPLACE INTO AIInterpretations (VerseId, ModelId, Interpretation, GeneratedAt, CostTokens)
-                VALUES (@verseId, @modelId, @interpretation, @generatedAt, @costTokens)";
+                INSERT OR REPLACE INTO AIInterpretations (VerseId, ModelId, PromptKey, Interpretation, GeneratedAt, CostTokens)
+                VALUES (@verseId, @modelId, @promptKey, @interpretation, @generatedAt, @costTokens)";
             command.Parameters.AddWithValue("@verseId", verseId);
             command.Parameters.AddWithValue("@modelId", modelId);
+            command.Parameters.AddWithValue("@promptKey", promptKey);
             command.Parameters.AddWithValue("@interpretation", interpretation);
             command.Parameters.AddWithValue("@generatedAt", DateTime.Now);
             command.Parameters.AddWithValue("@costTokens", costTokens);
@@ -580,7 +606,7 @@ namespace KuranApp.Data
 
             var command = connection.CreateCommand();
             command.CommandText = @"
-                SELECT i.Id, i.VerseId, m.ModelName, i.Interpretation, i.GeneratedAt, i.CostTokens
+                SELECT i.Id, i.VerseId, i.ModelId, m.ModelName, i.PromptKey, i.Interpretation, i.GeneratedAt, i.CostTokens
                 FROM AIInterpretations i
                 JOIN LLMModels m ON i.ModelId = m.Id
                 WHERE i.VerseId = @verseId";
@@ -593,28 +619,31 @@ namespace KuranApp.Data
                 {
                     Id = reader.GetInt32(0),
                     VerseId = reader.GetInt32(1),
-                    ModelName = reader.GetString(2),
-                    Interpretation = reader.GetString(3),
-                    GeneratedAt = reader.GetDateTime(4),
-                    CostTokens = reader.GetInt32(5)
+                    ModelId = reader.GetInt32(2),
+                    ModelName = reader.GetString(3),
+                    PromptKey = reader.GetString(4),
+                    Interpretation = reader.GetString(5),
+                    GeneratedAt = reader.GetDateTime(6),
+                    CostTokens = reader.GetInt32(7)
                 });
             }
             return interpretations;
         }
 
-        public AIInterpretation? GetAIInterpretation(int verseId, int modelId)
+        public AIInterpretation? GetAIInterpretation(int verseId, int modelId, string promptKey = "default")
         {
             using var connection = new SqliteConnection(_connectionString);
             connection.Open();
 
             var command = connection.CreateCommand();
             command.CommandText = @"
-                SELECT i.Id, i.VerseId, m.ModelName, i.Interpretation, i.GeneratedAt, i.CostTokens
+                SELECT i.Id, i.VerseId, i.ModelId, m.ModelName, i.PromptKey, i.Interpretation, i.GeneratedAt, i.CostTokens
                 FROM AIInterpretations i
                 JOIN LLMModels m ON i.ModelId = m.Id
-                WHERE i.VerseId = @verseId AND i.ModelId = @modelId";
+                WHERE i.VerseId = @verseId AND i.ModelId = @modelId AND i.PromptKey = @promptKey";
             command.Parameters.AddWithValue("@verseId", verseId);
             command.Parameters.AddWithValue("@modelId", modelId);
+            command.Parameters.AddWithValue("@promptKey", promptKey);
 
             using var reader = command.ExecuteReader();
             if (reader.Read())
@@ -623,16 +652,18 @@ namespace KuranApp.Data
                 {
                     Id = reader.GetInt32(0),
                     VerseId = reader.GetInt32(1),
-                    ModelName = reader.GetString(2),
-                    Interpretation = reader.GetString(3),
-                    GeneratedAt = reader.GetDateTime(4),
-                    CostTokens = reader.GetInt32(5)
+                    ModelId = reader.GetInt32(2),
+                    ModelName = reader.GetString(3),
+                    PromptKey = reader.GetString(4),
+                    Interpretation = reader.GetString(5),
+                    GeneratedAt = reader.GetDateTime(6),
+                    CostTokens = reader.GetInt32(7)
                 };
             }
             return null;
         }
 
-        public void SaveInterpretationToFile(int surahNumber, int modelId, string content)
+        public void SaveInterpretationToFile(int surahNumber, int modelId, string content, string promptKey = "default")
         {
             using var connection = new SqliteConnection(_connectionString);
             connection.Open();
@@ -643,12 +674,13 @@ namespace KuranApp.Data
                 Directory.CreateDirectory(dataDir);
             }
 
-            var filePath = Path.Combine(dataDir, $"surah_{surahNumber}_model_{modelId}.json");
+            var filePath = Path.Combine(dataDir, $"surah_{surahNumber}_model_{modelId}_prompt_{promptKey}.json");
 
             var interpretationData = new
             {
                 SurahNumber = surahNumber,
                 ModelId = modelId,
+                PromptKey = promptKey,
                 GeneratedAt = DateTime.Now,
                 Content = content
             };
@@ -657,19 +689,20 @@ namespace KuranApp.Data
 
             var command = connection.CreateCommand();
             command.CommandText = @"
-                INSERT OR REPLACE INTO FileBackups (SurahNumber, ModelId, FilePath, CreatedAt)
-                VALUES (@surahNumber, @modelId, @filePath, @createdAt)";
+                INSERT OR REPLACE INTO FileBackups (SurahNumber, ModelId, PromptKey, FilePath, CreatedAt)
+                VALUES (@surahNumber, @modelId, @promptKey, @filePath, @createdAt)";
             command.Parameters.AddWithValue("@surahNumber", surahNumber);
             command.Parameters.AddWithValue("@modelId", modelId);
+            command.Parameters.AddWithValue("@promptKey", promptKey);
             command.Parameters.AddWithValue("@filePath", filePath);
             command.Parameters.AddWithValue("@createdAt", DateTime.Now);
             command.ExecuteNonQuery();
         }
 
-        public string? LoadInterpretationFromFile(int surahNumber, int modelId)
+        public string? LoadInterpretationFromFile(int surahNumber, int modelId, string promptKey = "default")
         {
             var dataDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "QuranData", "Interpretations");
-            var filePath = Path.Combine(dataDir, $"surah_{surahNumber}_model_{modelId}.json");
+            var filePath = Path.Combine(dataDir, $"surah_{surahNumber}_model_{modelId}_prompt_{promptKey}.json");
 
             if (File.Exists(filePath))
             {

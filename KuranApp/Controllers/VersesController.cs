@@ -38,16 +38,16 @@ namespace KuranApp.Controllers
         }
 
         [HttpGet("{id}/interpretations/{modelId}")]
-        public ActionResult<AIInterpretation> GetInterpretation(int id, int modelId)
+        public ActionResult<AIInterpretation> GetInterpretation(int id, int modelId, [FromQuery] string promptKey = "default")
         {
-            var interpretation = _db.GetAIInterpretation(id, modelId);
+            var interpretation = _db.GetAIInterpretation(id, modelId, promptKey);
             if (interpretation == null)
                 return NotFound();
             return interpretation;
         }
 
         [HttpPost("{id}/interpretations/{modelId}/generate")]
-        public async Task<ActionResult<AIInterpretation>> GenerateInterpretation(int id, int modelId)
+        public async Task<ActionResult<AIInterpretation>> GenerateInterpretation(int id, int modelId, [FromQuery] string promptKey = "default")
         {
             var verse = _db.GetVerseById(id);
             if (verse == null)
@@ -57,24 +57,26 @@ namespace KuranApp.Controllers
             if (modelInfo == null)
                 return NotFound("Model not found.");
 
-            var existing = _db.GetAIInterpretation(id, modelId);
+            var existing = _db.GetAIInterpretation(id, modelId, promptKey);
             if (existing != null)
                 return existing;
 
-            var result = await _persistenceService.GenerateInterpretationAsync(verse, modelInfo);
+            var result = await _persistenceService.GenerateInterpretationAsync(verse, modelInfo, promptKey);
             if (result == null)
                 return BadRequest("Yorum üretilemedi (API hatası veya model yüklü değil).");
 
             var interpretation = new AIInterpretation
             {
                 VerseId = id,
+                ModelId = modelId,
                 ModelName = modelInfo.DisplayName,
+                PromptKey = promptKey,
                 Interpretation = result,
                 GeneratedAt = DateTime.Now
             };
 
-            _db.AddAIInterpretation(id, modelId, result);
-            _persistenceService.SaveInterpretationToFile(verse.SurahId, modelId, result);
+            _db.AddAIInterpretation(id, modelId, result, 0, promptKey);
+            _persistenceService.SaveInterpretationToFile(verse.SurahId, modelId, result, promptKey);
 
             return interpretation;
         }

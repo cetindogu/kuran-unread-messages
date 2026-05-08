@@ -6,7 +6,7 @@ $backendUrl = $null
 $lmStudioUrl = "http://127.0.0.1:1234/v1"
 
 # Token harcamamak için varsayılan olarak sadece 1 ayet işler. İsterseniz 0 yaparak tüm ayetleri işletebilirsiniz.
-$maxVersesToProcess = 10
+$maxVersesToProcess = 20
 
 function Get-RepoRoot {
     $scriptPath = $MyInvocation.MyCommand.Path
@@ -110,14 +110,17 @@ function Get-InterpretationFilePath {
         [string]$repoRoot,
         [string]$modelName,
         [int]$surahNumber,
-        [int]$verseNumber
+        [int]$verseNumber,
+        [string]$promptKey = "default"
     )
 
     $modelSlug = To-FileSafeSlug -value $modelName
+    $promptSlug = To-FileSafeSlug -value $promptKey
     $quranDataRoot = Join-Path $repoRoot "KuranApp\Data\QuranData"
     $interpretationsRoot = Join-Path $quranDataRoot "Interpretations"
     $modelDir = Join-Path $interpretationsRoot $modelSlug
-    $baseDir = Join-Path $modelDir ("surah_{0}" -f $surahNumber)
+    $promptDir = Join-Path $modelDir $promptSlug
+    $baseDir = Join-Path $promptDir ("surah_{0}" -f $surahNumber)
     if (-not (Test-Path $baseDir)) {
         New-Item -ItemType Directory -Path $baseDir -Force | Out-Null
     }
@@ -162,13 +165,15 @@ function Save-InterpretationToFile {
         [int]$verseNumber,
         [string]$arabicText,
         [string]$turkishTranslation,
-        [string]$interpretationText
+        [string]$interpretationText,
+        [string]$promptKey = "default"
     )
 
     Assert-SafeFilePath -filePath $filePath -repoRoot $repoRoot
 
     $payload = [ordered]@{
         modelName          = $modelName
+        promptKey          = $promptKey
         generatedAtUtc     = (Get-Date).ToUniversalTime().ToString('o')
         verseId            = $verseId
         surahNumber        = $surahNumber
@@ -185,10 +190,12 @@ function Process-Interpretations {
     param(
         [int]$modelId,
         [string]$modelName,
-        [string]$repoRoot
+        [string]$repoRoot,
+        [string]$promptKey = "detailed"
     )
 
     Write-Host "Model: $modelName"
+    Write-Host "Prompt Key: $promptKey"
     Write-Host "Backend Model ID: $modelId"
 
     try {
@@ -199,62 +206,43 @@ function Process-Interpretations {
     $total = $verses.Count
     Write-Host "Toplam $total ayet bulundu."
 
-    $processed = 0
-    $attempted = 0
+    $count = 0
     foreach ($v in $verses) {
-        if ($maxVersesToProcess -gt 0 -and $attempted -ge $maxVersesToProcess) {
+        if ($maxVersesToProcess -gt 0 -and $count -ge $maxVersesToProcess) {
+            Write-Host "Limit ($maxVersesToProcess) doldu, durduruluyor."
             break
         }
 
-        $verseId = [int]$v.id
-        $surahNumber = [int]$v.surahId
-        $verseNumber = [int]$v.verseNumber
+        $sid = [int]$v.surahId
+        $vno = [int]$v.verseNumber
+        $vid = [int]$v.id
 
-        $filePath = Get-InterpretationFilePath -repoRoot $repoRoot -modelName $modelName -surahNumber $surahNumber -verseNumber $verseNumber
-
-        # İdempotent: dosya varsa bu model için bu ayet yorumlanmış kabul edilir ve atlanır
+        $filePath = Get-InterpretationFilePath -repoRoot $repoRoot -modelName $modelName -surahNumber $sid -verseNumber $vno -promptKey $promptKey
         if (Test-Path $filePath) {
-            Write-Host ("[SKIP] Zaten var: S{0} A{1} ({2})" -f $surahNumber, $verseNumber, $filePath)
+            Write-Host "[$count/$total] Atlanıyor (Dosya var): Sure $sid Ayet $vno"
+            $count++
             continue
         }
 
-        $attempted++
-        Write-Host ("[RUN ] S{0} A{1} (VerseId: {2}) -> {3}" -f $surahNumber, $verseNumber, $verseId, $filePath)
+        Write-Host "[$count/$total] İşleniyor: Sure $sid Ayet $vno"
 
+        # Backend call to trigger interpretation
+        $interpretUrl = "$backendUrl/LLM/batch-interpret?modelId=$modelId&surahId=$sid&promptKey=$promptKey"
         try {
-            # Backend endpointi hem DB'ye yazar, hem de bizim ayrıca dosyaya yazmamız için metni döner
-            $gen = Invoke-RestMethod -Method Post -Uri "$backendUrl/Verses/$verseId/interpretations/$modelId/generate" -ErrorAction Stop
-
-            if ($null -eq $gen -or [string]::IsNullOrWhiteSpace($gen.interpretation)) {
-                Write-Warning "Yorum üretilemedi (boş yanıt)."
-                continue
-            }
-
-            $saveParams = @{
-                filePath           = $filePath
-                repoRoot           = $repoRoot
-                modelName          = $modelName
-                verseId            = $verseId
-                surahNumber        = $surahNumber
-                verseNumber        = $verseNumber
-                arabicText         = $v.arabicText
-                turkishTranslation = $v.turkishTranslation
-                interpretationText = $gen.interpretation
-            }
-            Save-InterpretationToFile @saveParams
-
-            Write-Host ("[OK  ] Kaydedildi: {0}" -f $filePath)
-            $processed++
-
-            Start-Sleep -Milliseconds 250
+            $resp = Invoke-RestMethod -Method Post -Uri $interpretUrl -TimeoutSec 3600 -ErrorAction Stop
+            
+            # Backend usually returns all verses of the surah interpreted. 
+            # We need to fetch the interpretation from DB to save to file if we want file parity.
+            # But the backend call already does SaveInterpretationToFile. 
+            # We just need to make sure the PS script doesn't overwrite it with wrong path.
+            
+            Write-Host "  Başarılı: $($resp.message)"
         } catch {
-            $err = $_.Exception.Message
-            Write-Warning ("[ERR ] S{0} A{1} -> {2}" -f $surahNumber, $verseNumber, $err)
-            Start-Sleep -Seconds 2
+            Write-Warning "  Hata (Sure $sid): $($_.Exception.Message)"
         }
-    }
 
-    Write-Host "Tamamlandı. Yeni yazılan yorum sayısı: $processed"
+        $count++
+    }
 }
 
 # MAIN
@@ -287,8 +275,11 @@ if (-not $currentModel) {
 }
 
 try {
+    $promptKey = $args[0]
+    if (-not $promptKey) { $promptKey = "detailed" }
+    
     $modelId = Ensure-BackendModel -modelName $currentModel
-    Process-Interpretations -modelId $modelId -modelName $currentModel -repoRoot $repoRoot
+    Process-Interpretations -modelId $modelId -modelName $currentModel -repoRoot $repoRoot -promptKey $promptKey
 } catch {
     Write-Error $_
     exit 1
